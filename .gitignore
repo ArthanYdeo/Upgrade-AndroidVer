@@ -10,6 +10,30 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 
+# Firebase
+.firebase
+/functions/node_modules
+/firebase.json
+/firebase-debug.log
+/.firebaserc
+
+# macOS
+.DS_Store
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# Visual Studio Code
+.vscode/
+
+# IDE files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw??
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/

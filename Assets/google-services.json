@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "916238816727",
+    "firebase_url": "https://upgrade-2c69e-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "upgrade-2c69e",
+    "storage_bucket": "upgrade-2c69e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916238816727:android:2fcc61a183b1fc1ccf2792",
+        "android_client_info": {
+          "package_name": "com.company.upgrade"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916238816727-qr01crhual7da7u5u57vcqd9ia1nf3r0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIKkaKVEAVmW83EPROxX5j9xPJma3Iu6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916238816727-29m3818kkuilu2jg1v21k2dtc35jufio.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
