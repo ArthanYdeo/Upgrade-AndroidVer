@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LogoutManager : MonoBehaviour
 {
 
-    public string registrationSceneName = "Registration";
+    public string titleSceneName = "Title";
     private FirebaseAuth auth;
     void Start()
 {
@@ -21,14 +21,14 @@ public class LogoutManager : MonoBehaviour
         }
     });
 }
-public void LogoutAndReturnToRegistrationScene()
+public void LogoutAndReturnTotitleScene()
 {
     if (auth.CurrentUser != null)
     {
         auth.SignOut();
         Debug.Log("User logged out successfully.");
     }
-    SceneManager.LoadScene(registrationSceneName);
+    SceneManager.LoadScene(titleSceneName);
 }
 
 

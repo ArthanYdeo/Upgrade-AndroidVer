@@ -692,7 +692,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1037754428}
         m_TargetAssemblyTypeName: LogoutManager, Assembly-CSharp
-        m_MethodName: LogoutAndReturnToRegistrationScene
+        m_MethodName: LogoutAndReturnTotitleScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1656,7 +1656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ec74059b2b0d6498ebbd4980c5f3b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  registrationSceneName: Registration
+  titleSceneName: Title
 --- !u!4 &1037754429
 Transform:
   m_ObjectHideFlags: 0

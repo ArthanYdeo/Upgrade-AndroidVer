@@ -67,7 +67,7 @@ public class GameManagerScript : MonoBehaviour
 
     public void mainMenu()
     {
-        SceneManager.LoadScene("Chapter Select");
+        SceneManager.LoadScene("Story");
         Time.timeScale = 1;
     }
 
@@ -80,7 +80,7 @@ public class GameManagerScript : MonoBehaviour
 
     public void selection()
     {
-        SceneManager.LoadScene("Chapter Select");
+        SceneManager.LoadScene("Story");
         Time.timeScale = 1;
     }
 }
