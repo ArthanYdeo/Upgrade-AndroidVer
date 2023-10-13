@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    private void Update()
+    public void Update()
     {
        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
@@ -33,8 +33,8 @@ public class PlayerMovement : MonoBehaviour
 
            if (Input.GetButtonDown("Jump"))
             {
-                jump = true;
-                animator.SetBool("IsJumping", true);
+                jump = false;
+                animator.SetBool("IsJumping", false);
             }
 
            
@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
     {
         animator.SetBool("IsJumping", false);
     }
-    private void FixedUpdate()
+    public void FixedUpdate()
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
