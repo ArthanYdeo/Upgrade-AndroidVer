@@ -1019,6 +1019,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: resume
       objectReference: {fileID: 0}
+    - target: {fileID: 3278595729889140487, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 168433681}
+    - target: {fileID: 3278595729889140487, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: pause
+      objectReference: {fileID: 0}
     - target: {fileID: 4480967989369299655, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
       propertyPath: m_SizeDelta.x
       value: 435.3409
@@ -1089,7 +1097,7 @@ PrefabInstance:
       objectReference: {fileID: 168433681}
     - target: {fileID: 8539854144808190020, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: selection
+      value: mainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 9003016189754914219, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
       propertyPath: m_fontSize
@@ -1479,7 +1487,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1251244012
 MonoBehaviour:
   m_ObjectHideFlags: 0
