@@ -636,8 +636,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundHeight: 0
-  screenRight: 0
   groundRight: 0
+  screenRight: 0
+  obstacleTemplate: {fileID: 3387111118094529467, guid: 30bbfc0beb6b6ce48ba407ee82a18d43, type: 3}
 --- !u!4 &708046230
 Transform:
   m_ObjectHideFlags: 0

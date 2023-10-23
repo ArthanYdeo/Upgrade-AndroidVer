@@ -13,7 +13,7 @@ public class Ground : MonoBehaviour
 
     bool didGenerateGround = false;
 
-   
+    public Obstacle obstacleTemplate;
 
     private void Awake()
     {
@@ -96,6 +96,18 @@ public class Ground : MonoBehaviour
         Ground goGround = go.GetComponent<Ground>();
         goGround.groundHeight = go.transform.position.y + (goCollider.size.y / 2);
 
+
+        int obstacleNum = Random.Range(0, 3);
+        for (int i=0; i<obstacleNum; i++)
+        {
+            float y = goGround.groundHeight;
+            float width = goCollider.size.x / 2 - 1;
+            float left = go.transform.position.x - width;
+            float right = go.transform.position.x + width;
+            float x = Random.Range(left, right);
+            GameObject obst = Instantiate(obstacleTemplate.gameObject);
+            obst.transform.position = new Vector2(x, y);
+        }
     }
 
 }
