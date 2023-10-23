@@ -7,12 +7,14 @@ Library: E:\Unity Proj\Upgrade-AndroidVer\Temp\BurstOutput\tempburstlibs\armeabi
 --dump=Function
 --float-precision=Standard
 --assembly-defines=Assembly-CSharp;
+--assembly-defines=AstarPathfindingProject;
 --assembly-defines=Firebase.App;
 --assembly-defines=Firebase.Auth;
 --assembly-defines=Firebase.Platform;
 --assembly-defines=Firebase.TaskExtension;
 --assembly-defines=Mono.Security;
 --assembly-defines=mscorlib;
+--assembly-defines=Pathfinding.Ionic.Zip.Reduced;
 --assembly-defines=System.Configuration;
 --assembly-defines=System.Core;
 --assembly-defines=System;
