@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -7,8 +8,8 @@ public class PlayerMovement : MonoBehaviour
 
     public float runSpeed = 40f;
 
-    private float horizontalMove = 0f;
-    private bool jump = false;
+    float horizontalMove = 0f;
+    bool jump = false;
 
     public GameManagerScript gameManager;
 
@@ -20,16 +21,40 @@ public class PlayerMovement : MonoBehaviour
 
     public void Update()
     {
-        // Use buttons for movement
-        horizontalMove = Input.GetAxis("Horizontal") * runSpeed;
+        // Handle touch or button input
+        horizontalMove = GetHorizontalInput() * runSpeed;
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-        if (Input.GetButtonDown("Jump"))
+        // Handle jump using UI button
+        if (IsJumpButtonPressed())
         {
             jump = true;
             animator.SetBool("IsJumping", true);
         }
+    }
+
+    public float GetHorizontalInput()
+    {
+        float horizontalInput = 0f;
+
+        // Check if UI buttons are pressed
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        {
+            horizontalInput = -1f;
+        }
+        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        {
+            horizontalInput = 1f;
+        }
+
+        return horizontalInput;
+    }
+
+    public bool IsJumpButtonPressed()
+    {
+        // Check if UI jump button is pressed or space key is pressed
+        return Input.GetButtonDown("Jump");
     }
 
     public void OnLanding()
@@ -37,29 +62,20 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("IsJumping", false);
     }
 
-    public void FixedUpdate()
+    private void FixedUpdate()
     {
-        // Use Touch for mobile controls
-        for (int i = 0; i < Input.touchCount; i++)
-        {
-            if (Input.GetTouch(i).position.x < Screen.width / 2)
-            {
-                horizontalMove = -runSpeed;
-            }
-            else if (Input.GetTouch(i).position.x > Screen.width / 2)
-            {
-                horizontalMove = runSpeed;
-            }
-        }
-
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
     }
 
-    // Modify this method based on your button setup in the UI
-    public void OnButtonJumpClick()
+    private void OnCollisionEnter(Collision collision)
     {
-        jump = true;
-        animator.SetBool("IsJumping", true);
+        if (collision.gameObject.CompareTag("Finish"))
+        {
+            // Player collided with an obstacle, game over
+            gameManager.Dialogue();
+            gameManager.gameWin();
+            Time.timeScale = 0; // Pause the game
+        }
     }
 }

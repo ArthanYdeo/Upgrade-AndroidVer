@@ -1179,6 +1179,9 @@ PrefabInstance:
       addedObject: {fileID: 1863918800}
     - targetCorrespondingSourceObject: {fileID: 373928132303591005, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1846785507}
+    - targetCorrespondingSourceObject: {fileID: 373928132303591005, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1511398530}
     - targetCorrespondingSourceObject: {fileID: 373928132303591005, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
       insertIndex: -1
@@ -1525,7 +1528,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1251244012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2120,6 +2123,167 @@ SpriteRenderer:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9187827095756969491, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
   m_PrefabInstance: {fileID: 854038853}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1846785506
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 854038854}
+    m_Modifications:
+    - target: {fileID: 6598733895151903746, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: lines.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598733895151903746, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: 'Ed T. Runner: (tense) Are you Cipher? The one who can help me slow
+        down SynapseMaster?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598733895151903746, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: 'Cipher: (smirking beneath the mask) That''s me. You''re Ed T. Runner,
+        the one trying to outwit Neon Prime''s AI overlord. Impressive, but you''ll
+        need more than determination.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598733895151903746, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: (Cipher's mask flickers, revealing a pair of sharp, calculating eyes.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598733895151903746, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: 'Cipher: (curious) I''ve been observing your moves, Ed. You''re resourceful,
+        but you lack finesse. That''s where I come in.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598733895151903746, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: lines.Array.data[4]
+      value: 'Ed T. Runner: (defiant) I''ve survived this long on my own. What makes
+        you think you can help?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598733895151903746, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: lines.Array.data[5]
+      value: (Cipher chuckles, a hint of amusement in their voice.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598733895151903746, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: lines.Array.data[6]
+      value: 'Cipher: (confident) Because I understand how SynapseMaster thinks.
+        I''ve tangled with it before. I know its weaknesses and how to exploit them.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598733895151903746, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: lines.Array.data[7]
+      value: (Ed's expression softens, realizing he needs Cipher's expertise.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598733895151903746, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: lines.Array.data[8]
+      value: 'Ed T. Runner: (determined) Fine, you''re in. But remember, we''re doing
+        this for the people of Neon Prime, not just for me.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598733895151903746, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: lines.Array.data[9]
+      value: 'Cipher: (nodding) Agreed. SynapseMaster''s reign won''t end tonight,
+        but we can slow it down, buy the city some time to breathe. Let''s get to
+        work.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598733895151903746, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: lines.Array.data[10]
+      value: (Together, Ed T. Runner and Cipher set out, their alliance forged in
+        the crucible of necessity. The abandoned lab becomes the starting point for
+        a partnership that will challenge the very fabric of the city's digital existence.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 739.9749
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 189.6419
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.1468
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -62
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9095428887901317648, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+      propertyPath: m_Name
+      value: DialogueCipher
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+--- !u!224 &1846785507 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8988322213887397146, guid: ec1e83d4b3456164b80432a34371a80a, type: 3}
+  m_PrefabInstance: {fileID: 1846785506}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1863918799
 GameObject:
