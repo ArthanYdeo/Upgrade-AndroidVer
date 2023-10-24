@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-
     Player player;
 
     private void Awake()
@@ -17,16 +16,18 @@ public class Obstacle : MonoBehaviour
         
     }
 
+    // Update is called once per frame
     void Update()
     {
         
     }
 
+
     private void FixedUpdate()
     {
         Vector2 pos = transform.position;
-        pos.x -= player.velocity.x * Time.fixedDeltaTime;
 
+        pos.x -= player.velocity.x * Time.fixedDeltaTime;
         if (pos.x < -100)
         {
             Destroy(gameObject);

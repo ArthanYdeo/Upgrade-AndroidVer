@@ -2,18 +2,48 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
     Player player;
     Text distanceText;
 
+    GameObject results;
+    Text finalDistanceText;
 
-    private void Awake()
+   private void Awake()
+{
+    player = GameObject.Find("Player")?.GetComponent<Player>();
+    if (player == null)
     {
-        player = GameObject.Find("Player").GetComponent<Player>();
-        distanceText = GameObject.Find("DistanceText").GetComponent<Text>();
+        Debug.LogError("Player not found or Player script not attached.");
     }
+
+    distanceText = GameObject.Find("DistanceText")?.GetComponent<Text>();
+    if (distanceText == null)
+    {
+        Debug.LogError("DistanceText not found or Text component not attached.");
+    }
+
+    results = GameObject.Find("Results");
+    if (results == null)
+    {
+        Debug.LogError("Results not found.");
+    }
+
+    finalDistanceText = GameObject.Find("FinalDistanceText")?.GetComponent<Text>();
+    if (finalDistanceText == null)
+    {
+        Debug.LogError("FinalDistanceText not found or Text component not attached.");
+    }
+
+    if (results != null)
+    {
+        results.SetActive(false);
+    }
+}
+
 
     // Start is called before the first frame update
     void Start()
@@ -26,5 +56,13 @@ public class UIController : MonoBehaviour
     {
         int distance = Mathf.FloorToInt(player.distance);
         distanceText.text = distance + " m";
+
+        if (player.isDead)
+        {
+            results.SetActive(true);
+            finalDistanceText.text = distance + " m";
+        }
     }
+
+    
 }

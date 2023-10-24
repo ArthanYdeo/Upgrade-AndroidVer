@@ -13,14 +13,13 @@ public class Ground : MonoBehaviour
 
     bool didGenerateGround = false;
 
-    public Obstacle obstacleTemplate;
+    public Obstacle boxTemplate;
 
     private void Awake()
     {
         player = GameObject.Find("Player").GetComponent<Player>();
 
         collider = GetComponent<BoxCollider2D>();
-        groundHeight = transform.position.y + (collider.size.y / 2);
         screenRight = Camera.main.transform.position.x * 2;
     }
 
@@ -33,7 +32,7 @@ public class Ground : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        groundHeight = transform.position.y + (collider.size.y / 2);
     }
 
     private void FixedUpdate()
@@ -97,16 +96,37 @@ public class Ground : MonoBehaviour
         goGround.groundHeight = go.transform.position.y + (goCollider.size.y / 2);
 
 
-        int obstacleNum = Random.Range(0, 3);
+        GroundFall fall = go.GetComponent<GroundFall>();
+        if (fall != null)
+        {
+            Destroy(fall);
+            fall = null;
+        }
+
+        if (Random.Range(0,3) == 0)
+        {
+            fall = go.AddComponent<GroundFall>();
+            fall.fallSpeed = Random.Range(1.0f, 3.0f);
+        }
+
+
+        int obstacleNum = Random.Range(0, 4);
         for (int i=0; i<obstacleNum; i++)
         {
+            GameObject box = Instantiate(boxTemplate.gameObject);
             float y = goGround.groundHeight;
-            float width = goCollider.size.x / 2 - 1;
-            float left = go.transform.position.x - width;
-            float right = go.transform.position.x + width;
+            float halfWidth = goCollider.size.x / 2 - 1;
+            float left = go.transform.position.x - halfWidth;
+            float right = go.transform.position.x + halfWidth;
             float x = Random.Range(left, right);
-            GameObject obst = Instantiate(obstacleTemplate.gameObject);
-            obst.transform.position = new Vector2(x, y);
+            Vector2 boxPos = new Vector2(x, y);
+            box.transform.position = boxPos;
+
+            if (fall != null)
+            {
+                Obstacle o = box.GetComponent<Obstacle>();
+                fall.obstacles.Add(o);
+            }
         }
     }
 
