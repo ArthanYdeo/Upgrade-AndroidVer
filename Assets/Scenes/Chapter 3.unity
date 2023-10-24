@@ -1700,6 +1700,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 2499517271474988163, guid: fe5a1147de35ec24dbbb454253e6b0d5, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 8eaa345ffa6ade748a5748b1fa872228, type: 2}
+    - target: {fileID: 3058072557265908124, guid: fe5a1147de35ec24dbbb454253e6b0d5, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 8eaa345ffa6ade748a5748b1fa872228, type: 2}
     - target: {fileID: 3840349127760295227, guid: fe5a1147de35ec24dbbb454253e6b0d5, type: 3}
       propertyPath: healthBar
       value: 
@@ -1899,13 +1907,47 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1737701983300379525, guid: dbb16ab1c56c2dc4e957edd7d25003c2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1511398533}
   m_SourcePrefab: {fileID: 100100000, guid: dbb16ab1c56c2dc4e957edd7d25003c2, type: 3}
 --- !u!224 &1511398530 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3249105602847188797, guid: dbb16ab1c56c2dc4e957edd7d25003c2, type: 3}
   m_PrefabInstance: {fileID: 1511398529}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1511398531 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1737701983300379525, guid: dbb16ab1c56c2dc4e957edd7d25003c2, type: 3}
+  m_PrefabInstance: {fileID: 1511398529}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1511398532 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3704385065995308755, guid: dbb16ab1c56c2dc4e957edd7d25003c2, type: 3}
+  m_PrefabInstance: {fileID: 1511398529}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511398531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1511398533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511398531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ff4ec33df2675143a894764dcc891e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 1511398532}
+  remainingTime: 61
+  gameManager: {fileID: 168433681}
 --- !u!1 &1595658098
 GameObject:
   m_ObjectHideFlags: 0

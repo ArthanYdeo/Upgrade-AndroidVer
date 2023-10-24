@@ -2192,7 +2192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57994063de034140a1838859d269b85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: -400
+  gravity: -100
   velocity: {x: 0, y: 0}
   maxXVelocity: 100
   maxAcceleration: 10
@@ -2290,7 +2290,7 @@ Animator:
   m_GameObject: {fileID: 2067783750}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b01d321c27328634bb18297318a75320, type: 2}
+  m_Controller: {fileID: 9100000, guid: 734291c4cd5671b4880edf4b9bf53601, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

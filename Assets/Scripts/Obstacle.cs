@@ -28,7 +28,7 @@ public class Obstacle : MonoBehaviour
         Vector2 pos = transform.position;
 
         pos.x -= player.velocity.x * Time.fixedDeltaTime;
-        if (pos.x < -100)
+        if (pos.x < -50)
         {
             Destroy(gameObject);
         }

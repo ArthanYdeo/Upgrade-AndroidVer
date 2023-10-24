@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,13 +7,10 @@ public class PlayerMovement : MonoBehaviour
 
     public float runSpeed = 40f;
 
-    float horizontalMove = 0f;
-    bool jump = false;
-   
-   
+    private float horizontalMove = 0f;
+    private bool jump = false;
 
     public GameManagerScript gameManager;
-
 
     private void Start()
     {
@@ -27,41 +20,46 @@ public class PlayerMovement : MonoBehaviour
 
     public void Update()
     {
-       horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        // Use buttons for movement
+        horizontalMove = Input.GetAxis("Horizontal") * runSpeed;
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-           if (Input.GetButtonDown("Jump"))
-            {
-                jump = false;
-                animator.SetBool("IsJumping", false);
-            }
-
-           
+        if (Input.GetButtonDown("Jump"))
+        {
+            jump = true;
+            animator.SetBool("IsJumping", true);
+        }
     }
 
     public void OnLanding()
     {
         animator.SetBool("IsJumping", false);
     }
+
     public void FixedUpdate()
     {
+        // Use Touch for mobile controls
+        for (int i = 0; i < Input.touchCount; i++)
+        {
+            if (Input.GetTouch(i).position.x < Screen.width / 2)
+            {
+                horizontalMove = -runSpeed;
+            }
+            else if (Input.GetTouch(i).position.x > Screen.width / 2)
+            {
+                horizontalMove = runSpeed;
+            }
+        }
+
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
-        
-
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    // Modify this method based on your button setup in the UI
+    public void OnButtonJumpClick()
     {
-        if (collision.gameObject.CompareTag("Finish"))
-        {
-            // Player collided with an obstacle, game over
-            gameManager.Dialogue();
-            gameManager.gameWin(); 
-            Time.timeScale = 0; // Pause the game
-        }
-        
+        jump = true;
+        animator.SetBool("IsJumping", true);
     }
 }
-

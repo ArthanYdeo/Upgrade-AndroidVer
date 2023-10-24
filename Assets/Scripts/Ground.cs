@@ -110,7 +110,7 @@ public class Ground : MonoBehaviour
         }
 
 
-        int obstacleNum = Random.Range(0, 4);
+        int obstacleNum = Random.Range(1, 3);
         for (int i=0; i<obstacleNum; i++)
         {
             GameObject box = Instantiate(boxTemplate.gameObject);
