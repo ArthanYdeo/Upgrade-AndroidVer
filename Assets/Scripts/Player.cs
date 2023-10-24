@@ -53,7 +53,6 @@ public class Player : MonoBehaviour
                 {
                     fall.player = null;
                     fall = null;
-                    cameraController.StopShaking();
                 }
             }
         }
@@ -117,7 +116,6 @@ public class Player : MonoBehaviour
                     if (fall != null)
                     {
                         fall.player = this;
-                        cameraController.StartShaking();
                     }
                 }
             }
