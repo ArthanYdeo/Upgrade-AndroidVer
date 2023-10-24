@@ -1332,6 +1332,57 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 154.29
       objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: 'Ed T. Runner: Thats weird I heard a voice inside my head...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: 'Ed T. Runner: I better consult this to Dr. Welch.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: (Later, in a sterile hospital room, Ed wakes up, his head bandaged.
+        Dr. Roxanne Welch, a determined and caring scientist, stands by his bedside.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: 'Dr. Roxanne Welch: (softly, reassuring) Mr. Runner, you''ve been through
+        a terrible accident. But there''s hope. We''ve been working on an experimental
+        technology called SynapseMaster. It could help you recover faster, both physically
+        and mentally.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: 'Ed T. Runner: (groaning, confused) What... what does this have to do
+        with my brother, Edy?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: 'Dr. Roxanne Welch: (pausing, choosing her words carefully) I understand
+        your pain, Ed. Your brother''s death... it wasn''t an accident. He was onto
+        something big, something dangerous. SynapseMaster could give you the tools
+        to uncover the truth, to finish what he started.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[4]
+      value: (Dr. Roxanne Welch nods, her eyes reflecting both sympathy and resolve,
+        setting the stage for Ed's reluctant yet determined journey into the world
+        of SynapseMaster and the secrets it holds.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[5]
+      value: 'Ed T. Runner:  Now that I am okay, Time to find some clues about my
+        brother''s death...'
+      objectReference: {fileID: 0}
     - target: {fileID: 7558196416802868888, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
       propertyPath: m_Sprite
       value: 

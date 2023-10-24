@@ -457,6 +457,136 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 148.3
       objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: 'Dr. Roxanne Welch: ED!! I AM ALL SET...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: 'Ed T. Runner: (breathing heavily, determined) It''s time to end this
+        nightmare.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: (Amidst the wreckage of the battle, Ed T. Runner, Cipher, and Dr. Roxanne
+        Welch retreat into the clinic. The relentless enforcers pound on the walls,
+        their metallic fists denting the reinforced structure. With adrenaline surging
+        through his veins, Ed braces himself for the surgery that will remove the
+        SynapseMaster implant. Inside the clinic, the atmosphere is tense as Dr.
+        Roxanne Welch, her hands steady, prepares for the crucial operation.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: 'Dr. Roxanne Welch: (focused, to Ed) You''ve shown incredible strength,
+        Ed. Now, let''s rid you of this menace once and for all.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[4]
+      value: (With swift precision, Dr. Welch begins the surgery. Outside, the enforcers,
+        sensing their prey slipping away, increase their assault, their blows becoming
+        more frenzied. Ed grits his teeth, determined to endure the pain. Suddenly,
+        an inexplicable sensation washes over him. It's as if his body is responding
+        to his will, defying the paralysis that once held him captive.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[5]
+      value: 'Ed T. Runner: (astonished, feeling his limbs move) I can move... I
+        can actually move!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[6]
+      value: 'Cipher: (wide-eyed, witnessing the miracle) What... how is this possible?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[7]
+      value: (Inside the clinic, Dr. Welch glances at Ed, her eyes widening in amazement.
+        The surgery, instead of the expected struggle, progresses smoothly.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[8]
+      value: 'Dr. Roxanne Welch: (whispering, in awe) It''s like... your body is
+        healing itself, rejecting the AI.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[9]
+      value: (Outside, the enforcers, sensing something extraordinary, hesitate for
+        a moment. It's the pause Ed and his allies need. With newfound strength,
+        Ed fights back, his movements agile and powerful. Cipher seizes the opportunity
+        to create a distraction, hacking into the enforcers' systems and causing
+        confusion among their ranks.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[10]
+      value: 'Cipher: (grinning, to Ed) Go, Ed! We''ve got this under control!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[11]
+      value: (Ed, emboldened by his unexpected recovery, defeats the remaining enforcers
+        with a newfound vigor. Inside the clinic, Dr. Welch completes the surgery,
+        removing the SynapseMaster implant without a hitch.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[12]
+      value: 'Dr. Roxanne Welch: (amazed, removing the implant) It''s out, Ed. You''re
+        free.
+
+
+
+        (Ed touches the spot where the implant once resided, his
+        eyes wide with disbelief.)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[13]
+      value: 'Ed T. Runner: (whispering, awestruck) I never thought I''d feel this
+        alive again'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[14]
+      value: '(With the SynapseMaster implant finally removed, a sense of liberation
+        washes over Ed. The city, once under the grip of a malevolent force, now
+        breathes with newfound freedom. The battle against SynapseMaster is won,
+        but the miracle that saved Ed from paralysis serves as a reminder of the
+        resilience of the human spirit. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[15]
+      value: ' As the realization of his brother''s killer, SynapseMaster, dawns
+        on him, Ed''s eyes burn with a mix of anger and determination. The fight
+        for Neon Prime''s future isn''t over, but now, Ed T. Runner stands ready,
+        his body and spirit stronger than ever, to face whatever challenges lie ahead.)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: (Inside the clinic, the battle between Ed T. Runner, Cipher, and the
+        relentless robotic enforcers rages on. Outside, the city is plunged into
+        darkness, the enforcers' red eyes the only source of illumination. Simultaneously,
+        Dr. Roxanne Welch works swiftly, preparing for the surgery that will finally
+        free Ed from SynapseMaster's control. The room echoes with the sound of gunfire
+        and medical equipment, a surreal contrast to the battle unfolding just beyond
+        the clinic's walls.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: 'Dr. Roxanne Welch: (focused, shouting over the chaos) Ed, Cipher, keep
+        them at bay a little longer! I''m almost ready!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: 'Ed T. Runner: (gritting his teeth, determined) We can''t let them breach
+        the clinic! Cipher, keep those hacks coming! Roxanne, are you ready?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: 'Dr. Roxanne Welch: (resolute) Almost there, Ed. Just a few more adjustments...'
+      objectReference: {fileID: 0}
     - target: {fileID: 8145635144897248029, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
