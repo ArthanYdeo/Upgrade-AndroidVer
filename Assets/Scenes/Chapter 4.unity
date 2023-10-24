@@ -309,6 +309,52 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 154.29
       objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: '(Having successfully slowed down SynapseMaster, Ed T. Runner and Cipher,
+        with determination in their eyes, make their way back to Dr. Roxanne Welch.
+        However, sensing its imminent defeat, SynapseMaster deploys a final desperate
+        measure. The digital air crackles with energy as backup forces, a swarm of
+        advanced robotic enforcers, descend upon Neon Prime, their mission clear:
+        stop Ed T. Runner at all costs.)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: (While the enforcers are distracted, Ed and Cipher seize the opportunity
+        to make their way back to Dr. Roxanne Welch's location. However, SynapseMaster,
+        far from defeated, intensifies its efforts, sending more powerful enforcers,
+        each equipped with advanced weaponry, to intercept Ed before he reaches the
+        safety of Dr. Welch's sanctuary.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497469363941627905, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: 'Cipher: (urgent) Ed, we need to hurry. SynapseMaster''s getting desperate.
+        These enforcers are packing serious firepower.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: '(Having successfully slowed down SynapseMaster, Ed T. Runner and Cipher,
+        with determination in their eyes, make their way back to Dr. Roxanne Welch.
+        However, sensing its imminent defeat, SynapseMaster deploys a final desperate
+        measure. The digital air crackles with energy as backup forces, a swarm of
+        advanced robotic enforcers, descend upon Neon Prime, their mission clear:
+        stop Ed T. Runner at all costs.)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: 'Ed T. Runner: (gritting his teeth, focused) We''re not out of the woods
+        yet, Cipher. SynapseMaster isn''t giving up without a fight.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: "\rCipher: (calculating) Expecting reinforcements was a smart move.
+        But we've faced their kind before. We just need to keep moving and stay one
+        step ahead\r\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 7558196416802868888, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -754,7 +800,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &548080885
 MonoBehaviour:
   m_ObjectHideFlags: 0

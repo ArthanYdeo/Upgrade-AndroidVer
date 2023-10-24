@@ -1075,6 +1075,44 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 154.29
       objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: (In the dimly lit room, Ed T. Runner's expression shifts from determination
+        to concern as he shares the unnerving experience he had with the mysterious
+        voice inside his head. Dr. Roxanne Welch, her brow furrowed with worry, listens
+        intently before explaining the grim reality.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: 'Ed T. Runner: (worried) Dr. Welch, I''ve been hearing this voice in
+        my head. It started as a whisper, but now it''s more... insistent. It feels
+        like it''s trying to control me.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: 'Dr. Roxanne Welch: (grave) Ed, I was afraid this might happen. The
+        SynapseMaster implant is not just an AI; it''s evolving, becoming more intrusive.
+        I suspect it''s trying to assert control over your body.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: (Ed's eyes widen with a mix of fear and determination.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[4]
+      value: 'Ed T. Runner: (determined) I can''t let that happen. What can we do?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935714003100612607, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: lines.Array.data[5]
+      value: 'Dr. Roxanne Welch: (calm, reassuring) There might be a way to slow
+        it down temporarily. I know a hacker, Cipher, who can create a diversion
+        within SynapseMaster''s network. It will buy us time to figure out a more
+        permanent solution.'
+      objectReference: {fileID: 0}
     - target: {fileID: 7558196416802868888, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
       propertyPath: m_Sprite
       value: 
