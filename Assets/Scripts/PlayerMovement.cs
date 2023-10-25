@@ -1,17 +1,29 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Utilities;
+using PlayerControls;
 public class PlayerMovement : MonoBehaviour
 {
-    public CharacterController controller;
-    public Animator animator;
-
-    public float runSpeed = 40f;
-
-    float horizontalMove = 0f;
-    bool jump = false;
-
+    public float speed = 400;
+    private PlayerControl controls;
+    float direction = 0;
+    public Rigidbody2D playerRB;
     public GameManagerScript gameManager;
+    public Animator animator;
+    bool isGrounded;
+
+    private void Awake() {
+        controls = new PlayerControls();
+        controls.Enable();
+
+        controls.Land.Move.performed += ctx =>
+        {
+            direction = ctx.ReadValue<float>();
+        };
+
+        controls.Land.Jump.performed += ctx => Jump();
+    }
 
     private void Start()
     {
@@ -19,54 +31,21 @@ public class PlayerMovement : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    public void Update()
+    private void Update()
     {
-        // Handle touch or button input
-        horizontalMove = GetHorizontalInput() * runSpeed;
-
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
-
-        // Handle jump using UI button
-        if (IsJumpButtonPressed())
-        {
-            jump = true;
-            animator.SetBool("IsJumping", true);
-        }
+       
+    }
+    private void FixedUpdate() 
+    {
+        playerRB.velocity = new Vector2(direction * speed * Time.fixedDeltaTime, playerRB.velocity.y);
     }
 
-    public float GetHorizontalInput()
-    {
-        float horizontalInput = 0f;
-
-        // Check if UI buttons are pressed
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-        {
-            horizontalInput = -1f;
-        }
-        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            horizontalInput = 1f;
-        }
-
-        return horizontalInput;
-    }
-
-    public bool IsJumpButtonPressed()
-    {
-        // Check if UI jump button is pressed or space key is pressed
-        return Input.GetButtonDown("Jump");
-    }
 
     public void OnLanding()
     {
         animator.SetBool("IsJumping", false);
     }
 
-    private void FixedUpdate()
-    {
-        controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
-        jump = false;
-    }
 
     private void OnCollisionEnter(Collision collision)
     {
