@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
-using PlayerControls;
+//using PlayerControls;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 400;
@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     bool isGrounded;
 
     private void Awake() {
-        controls = new PlayerControls();
+        //controls = new PlayerControls();
         controls.Enable();
 
         controls.Land.Move.performed += ctx =>
@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
             direction = ctx.ReadValue<float>();
         };
 
-        controls.Land.Jump.performed += ctx => Jump();
+//        controls.Land.Jump.performed += ctx => Jump();
     }
 
     private void Start()
