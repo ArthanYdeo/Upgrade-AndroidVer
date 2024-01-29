@@ -209,7 +209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &70368929
 RectTransform:
   m_ObjectHideFlags: 0
@@ -224,6 +224,7 @@ RectTransform:
   m_Children:
   - {fileID: 36058869}
   - {fileID: 933632449}
+  - {fileID: 1175105876}
   m_Father: {fileID: 1010528324}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2411,7 +2412,6 @@ RectTransform:
   - {fileID: 124503356}
   - {fileID: 1394564528}
   - {fileID: 70368929}
-  - {fileID: 1175105876}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2766,12 +2766,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 581786260}
-  m_Father: {fileID: 1010528324}
+  m_Father: {fileID: 70368929}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 240.42, y: 406.3}
-  m_SizeDelta: {x: 271.33, y: 57.74}
+  m_AnchoredPosition: {x: 245.00003, y: 419.13007}
+  m_SizeDelta: {x: 267.31, y: 61.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1175105877
 MonoBehaviour:
@@ -2786,7 +2786,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voice: Daniel
-  dialogue: hello
+  dialogue: 'In the heart of Neon Prime, where neon lights painted the streets in
+    vivid hues of electric blue and crimson red, a tale of secrets and shadows was
+    about to unfold. The city, a labyrinth of towering skyscrapers and narrow alleys,
+    held more mysteries than met the eye.
+
+    Ed T. Runner, a former athlete turned
+    private investigator, found himself entangled in a web of intrigue after the
+    mysterious death of his brother, Edy T. Runner. Neon Prime, a city where the
+    line between human and machine blurred, was a place of both wonder and danger.
+
+    The
+    tale begins on a rainy night, the neon lights reflecting off the slick pavement
+    as Ed stood by his brother''s grave. The loss weighed heavy on his shoulders,
+    pushing him into a world he had never imagined. A cryptic message arrived, setting
+    him on a path that would lead him to the enigmatic Neon Lotus, a symbol whispered
+    in the darkest corners of the city.
+
+    Unbeknownst to Ed, shadowy figures
+    watched his every move, their motives hidden in the depths of the city''s secrets.
+    As he delved deeper into the labyrinthine alleys and clandestine clubs, he would
+    discover that his brother''s death was no mere accident.
+
+    In the neon-soaked
+    nights of Neon Prime, Ed would face challenges that would test his resolve, encounters
+    that would reveal the city''s hidden truths, and enemies that would stop at nothing
+    to protect their secrets. The echoes of footsteps in empty alleys, the flickering
+    of distant neon signs - all whispered of a conspiracy that reached far beyond
+    the city''s skyline.
+
+    Little did Ed know that his journey would uncover not
+    just the truth about his brother''s death, but a revelation that would shake
+    the very foundations of Neon Prime. As the rain continued to fall, the city''s
+    secrets glistened like diamonds in the dark - waiting to be discovered, waiting
+    to be revealed in the unfolding saga of shadows and neon.
+
+    Welcome to "Upgrade:
+    Unraveling the Truth." The city''s secrets are waiting. It''s time to unveil
+    them.
+
+'
 --- !u!114 &1175105878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3145,8 +3184,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 678665587}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5185866}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
