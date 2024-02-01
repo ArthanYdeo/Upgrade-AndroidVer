@@ -229,7 +229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -14.086975}
+  m_AnchoredPosition: {x: 0, y: -14.086914}
   m_SizeDelta: {x: -1060.1301, y: -149.71008}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &70368930
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.735849, g: 0.25338197, b: 0.6874086, a: 0.392}
+  m_Color: {r: 0.73333335, g: 0.015686275, b: 0.6862745, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1093,18 +1093,18 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Prologue: Shadows of Neon
 
-    
 
-    
 
-    In the heart of Neon Prime,
-    where neon lights painted the streets in vivid hues of electric blue and crimson
-    red, a tale of secrets and shadows was about to unfold. The city, a labyrinth
-    of towering skyscrapers and narrow alleys, held more mysteries than met the eye.
 
-    
 
-    
+    In the heart of Neon Prime, where neon
+    lights painted the streets in vivid hues of electric blue and crimson red, a
+    tale of secrets and shadows was about to unfold. The city, a labyrinth of towering
+    skyscrapers and narrow alleys, held more mysteries than met the eye.
+
+
+
+
 
     Ed
     T. Runner, a former athlete turned private investigator, found himself entangled
@@ -1112,54 +1112,54 @@ MonoBehaviour:
     Neon Prime, a city where the line between human and machine blurred, was a place
     of both wonder and danger.
 
-    
 
-    
 
-    The tale begins on a rainy night,
-    the neon lights reflecting off the slick pavement as Ed stood by his brother''s
-    grave. The loss weighed heavy on his shoulders, pushing him into a world he had
-    never imagined. A cryptic message arrived, setting him on a path that would lead
-    him to the enigmatic Neon Lotus, a symbol whispered in the darkest corners of
-    the city.
 
-    
 
-    
+    The tale begins on a rainy night, the neon
+    lights reflecting off the slick pavement as Ed stood by his brother''s grave.
+    The loss weighed heavy on his shoulders, pushing him into a world he had never
+    imagined. A cryptic message arrived, setting him on a path that would lead him
+    to the enigmatic Neon Lotus, a symbol whispered in the darkest corners of the
+    city.
 
-    Unbeknownst to Ed, shadowy figures watched his
-    every move, their motives hidden in the depths of the city''s secrets. As he
-    delved deeper into the labyrinthine alleys and clandestine clubs, he would discover
-    that his brother''s death was no mere accident.
 
-    
 
-    
 
-    In the neon-soaked
-    nights of Neon Prime, Ed would face challenges that would test his resolve, encounters
-    that would reveal the city''s hidden truths, and enemies that would stop at nothing
-    to protect their secrets. The echoes of footsteps in empty alleys, the flickering
-    of distant neon signs - all whispered of a conspiracy that reached far beyond
-    the city''s skyline.
 
-    
+    Unbeknownst to Ed, shadowy figures watched his every move, their
+    motives hidden in the depths of the city''s secrets. As he delved deeper into
+    the labyrinthine alleys and clandestine clubs, he would discover that his brother''s
+    death was no mere accident.
 
-    
 
-    Little did Ed know that his journey
-    would uncover not just the truth about his brother''s death, but a revelation
-    that would shake the very foundations of Neon Prime. As the rain continued to
-    fall, the city''s secrets glistened like diamonds in the dark - waiting to be
-    discovered, waiting to be revealed in the unfolding saga of shadows and neon.
 
-    
 
-    
 
-    Welcome
-    to "Upgrade: Unraveling the Truth." The city''s secrets are waiting. It''s time
-    to unveil them.'
+    In the neon-soaked nights of Neon Prime,
+    Ed would face challenges that would test his resolve, encounters that would reveal
+    the city''s hidden truths, and enemies that would stop at nothing to protect
+    their secrets. The echoes of footsteps in empty alleys, the flickering of distant
+    neon signs - all whispered of a conspiracy that reached far beyond the city''s
+    skyline.
+
+
+
+
+
+    Little did Ed know that his journey would uncover not just
+    the truth about his brother''s death, but a revelation that would shake the very
+    foundations of Neon Prime. As the rain continued to fall, the city''s secrets
+    glistened like diamonds in the dark - waiting to be discovered, waiting to be
+    revealed in the unfolding saga of shadows and neon.
+
+
+
+
+
+    Welcome to "Upgrade:
+    Unraveling the Truth." The city''s secrets are waiting. It''s time to unveil
+    them.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2803,9 +2803,9 @@ MonoBehaviour:
     him on a path that would lead him to the enigmatic Neon Lotus, a symbol whispered
     in the darkest corners of the city.
 
-    Unbeknownst to Ed, shadowy figures
-    watched his every move, their motives hidden in the depths of the city''s secrets.
-    As he delved deeper into the labyrinthine alleys and clandestine clubs, he would
+    Unbeknownst to Ed, shadowy figures watched
+    his every move, their motives hidden in the depths of the city''s secrets. As
+    he delved deeper into the labyrinthine alleys and clandestine clubs, he would
     discover that his brother''s death was no mere accident.
 
     In the neon-soaked
