@@ -18,6 +18,8 @@ public class NewPlayerMovement : MonoBehaviour
     public Rigidbody2D playerRB;
     public Animator animator;
 
+    public GameManagerScript gameManager;
+
     private void Awake()
     {
         controls = new PlayerControls();
@@ -29,6 +31,11 @@ public class NewPlayerMovement : MonoBehaviour
         };
 
         controls.Land.Jump.performed += ctx => Jump();
+    }
+    private void Start()
+    {
+        gameManager.DialogueIntro();
+        Time.timeScale = 0f;
     }
 
     // Update is called once per frame
@@ -54,7 +61,16 @@ public class NewPlayerMovement : MonoBehaviour
     {
         if(isGrounded)
             playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
+    }
 
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Finish"))
+        {
+            // Player collided with an obstacle, game over
+            gameManager.Dialogue();
+            gameManager.gameWin();
+            Time.timeScale = 0; // Pause the game
+        }
     }
 }

@@ -13,6 +13,7 @@ public class GameManagerScript : MonoBehaviour
     public GameObject dialogueBoxIntro;
     public GameObject dialogueBoxSynapse;
     public GameObject dialogueBoxCipher;
+    public GameObject controlPanelUI;
 
 
     // Start is called before the first frame update
@@ -25,6 +26,10 @@ public class GameManagerScript : MonoBehaviour
     void Update()
     {
         
+    }
+    public void ControlPanelUI()
+    {
+        controlPanelUI.SetActive(true);
     }
     public void DialogueBoxCipher()
     {
