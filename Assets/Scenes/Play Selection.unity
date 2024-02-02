@@ -1953,7 +1953,7 @@ GameObject:
   - component: {fileID: 2103736969}
   - component: {fileID: 2103736968}
   m_Layer: 0
-  m_Name: New Game Object
+  m_Name: Metamask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
