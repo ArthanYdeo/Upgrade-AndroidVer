@@ -147,6 +147,23 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2662797028137246462, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: dialogue
+      value: "(Later, in a sterile hospital room, Ed wakes up, his head bandaged.
+        Dr. Roxanne Welch, a determined and caring scientist, stands by his bedside.)
+        Dr. Roxanne Welch: (softly, reassuring) Mr. Runner, you've been through a
+        terrible accident. But there's hope. We've been working on an experimental
+        technology called SynapseMaster. \nIt could help you recover faster, both
+        physically and mentally. Ed T. Runner: (groaning, confused) What... what
+        does this have to do with my brother, Edy? Dr. Roxanne Welch: (pausing, choosing
+        her words carefully) I understand your pain, Ed. Your brother's death...
+        \nit wasn't an accident. He was onto something big, something dangerous.
+        SynapseMaster could give you the tools to uncover the truth, to finish what
+        he started. (Dr. Roxanne Welch nods, her eyes reflecting both sympathy and
+        resolve, \nsetting the stage for Ed's reluctant yet determined journey into
+        the world of SynapseMaster and the secrets it holds.) Ed T. Runner:  Now
+        that I am okay, Time to find some clues about my brother's death..."
+      objectReference: {fileID: 0}
     - target: {fileID: 2757966626069276822, guid: b85cc44c53bafb444817845342f154dc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -154,6 +171,45 @@ PrefabInstance:
     - target: {fileID: 2757966626069276822, guid: b85cc44c53bafb444817845342f154dc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: selection
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883319706437793164, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: lines.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883319706437793164, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: (Later, in a sterile hospital room, Ed wakes up, his head bandaged.
+        Dr. Roxanne Welch, a determined and caring scientist, stands by his bedside.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883319706437793164, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: 'Dr. Roxanne Welch: (softly, reassuring) Mr. Runner, you''ve been through
+        a terrible accident. But there''s hope. We''ve been working on an experimental
+        technology called SynapseMaster. It could help you recover faster, both physically
+        and mentally.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883319706437793164, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: 'Ed T. Runner: (groaning, confused) What... what does this have to do
+        with my brother, Edy?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883319706437793164, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: 'Dr. Roxanne Welch: (pausing, choosing her words carefully) I understand
+        your pain, Ed. Your brother''s death... it wasn''t an accident. He was onto
+        something big, something dangerous. SynapseMaster could give you the tools
+        to uncover the truth, to finish what he started.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883319706437793164, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: lines.Array.data[4]
+      value: (Dr. Roxanne Welch nods, her eyes reflecting both sympathy and resolve,
+        setting the stage for Ed's reluctant yet determined journey into the world
+        of SynapseMaster and the secrets it holds.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883319706437793164, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: lines.Array.data[5]
+      value: 'Ed T. Runner:  Now that I am okay, Time to find some clues about my
+        brother''s death...'
       objectReference: {fileID: 0}
     - target: {fileID: 3323906184465085165, guid: b85cc44c53bafb444817845342f154dc, type: 3}
       propertyPath: m_Pivot.x

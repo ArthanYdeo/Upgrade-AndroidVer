@@ -688,6 +688,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &1029907997 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+  m_PrefabInstance: {fileID: 2048605795}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1104739452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,6 +1141,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 373928132303591005, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
       insertIndex: 2
       addedObject: {fileID: 1966979444}
+    - targetCorrespondingSourceObject: {fileID: 373928132303591005, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1029907997}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
 --- !u!224 &1105832445 stripped
@@ -5006,6 +5014,132 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024002232}
   m_CullTransparentMesh: 1
+--- !u!1001 &2048605795
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1105832445}
+    m_Modifications:
+    - target: {fileID: 727121253888935252, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_Name
+      value: Speak
+      objectReference: {fileID: 0}
+    - target: {fileID: 3447693718519710493, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: dialogue
+      value: '(Inside the clinic, the battle between Ed T. Runner, Cipher, and the
+        relentless robotic enforcers rages on. Outside, the city is plunged into
+        darkness, the enforcers'' red eyes the only source of illumination. Simultaneously,
+        Dr. Roxanne Welch works swiftly, preparing for the surgery that will finally
+        free Ed from SynapseMaster''s control. The room echoes with the sound of
+        gunfire and medical equipment, a surreal contrast to the battle unfolding
+        just beyond the clinic''s walls.)
+
+        Dr. Roxanne Welch: (focused, shouting
+        over the chaos) Ed, Cipher, keep them at bay a little longer! I''m almost
+        ready!
+
+        Ed T. Runner: (gritting his teeth, determined) We can''t
+        let them breach the clinic! Cipher, keep those hacks coming! Roxanne, are
+        you ready?
+
+        Dr. Roxanne Welch: (resolute) Almost there, Ed. Just
+        a few more adjustments...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 102.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 27.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 84.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -16.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864626552951843747, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112830661284754249, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_fontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112830661284754249, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 82d6e47820188a449bffd8bb542145fa, type: 3}
 --- !u!1 &2124348108
 GameObject:
   m_ObjectHideFlags: 0
