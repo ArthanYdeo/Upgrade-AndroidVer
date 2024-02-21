@@ -1520,6 +1520,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 6b99ce671b3989b4faf86aa29d92635f, type: 3}
+    - target: {fileID: 7558196416802868888, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7558196416802868888, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: m_Color.r
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8145635144897248029, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1532,6 +1540,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 6b99ce671b3989b4faf86aa29d92635f, type: 3}
+    - target: {fileID: 8331113760692989587, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331113760692989587, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
+      propertyPath: m_Color.r
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8539854144808190020, guid: 0f4c780490cb35e4891da2fd6477b957, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -5545,6 +5561,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6220782606422752939, guid: ce1aa3a26fbd1fa4d8d30caf687933d6, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1436196357}
     - target: {fileID: 7318723642477695979, guid: ce1aa3a26fbd1fa4d8d30caf687933d6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 57.4

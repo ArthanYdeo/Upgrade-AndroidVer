@@ -23,6 +23,7 @@ namespace MetaMask.Unity.Contracts
             Ethereum = 1,
             Polygon = 137,
             Bsc = 56,
+            tBNB = 97,
             Avalanche = 43114,
             Arbitrum = 42161,
             Optimism = 10,

@@ -1219,6 +1219,10 @@ PrefabInstance:
       propertyPath: tokenList
       value: 
       objectReference: {fileID: 1423304195}
+    - target: {fileID: 1373012599388208079, guid: 7d1bbf14974af0147b1799996e0cbf9d, type: 3}
+      propertyPath: ConnectAndSignMessage
+      value: Test.
+      objectReference: {fileID: 0}
     - target: {fileID: 4111934819864484374, guid: 7d1bbf14974af0147b1799996e0cbf9d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
