@@ -72,7 +72,7 @@ public class GameManagerScript : MonoBehaviour
 
     public void mainMenu()
     {
-        SceneManager.LoadScene("Selection");
+        SceneManager.LoadScene("Play Selection");
         Time.timeScale = 1;
     }
 

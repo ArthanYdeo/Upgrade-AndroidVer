@@ -12,14 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Registration.unity
     guid: 668a749701c8b8f4194a54fddf801eb4
   - enabled: 1
-    path: Assets/Scenes/Selection.unity
-    guid: bfc39d75a89b8344585a3d868adfc48c
-  - enabled: 1
     path: Assets/Scenes/Play Selection.unity
     guid: b7d836f1fdc74fb49b27d5ac4d4d684e
   - enabled: 1
     path: Assets/Scenes/Arcade.unity
-    guid: a9dc89623b04685468d59c9ea909eec3
+    guid: 2ade5e7fb8c256f4cb33f5648d1a84b7
   - enabled: 1
     path: Assets/Scenes/Story.unity
     guid: 2562d6aa62fd5134598f1bfc787bde89
