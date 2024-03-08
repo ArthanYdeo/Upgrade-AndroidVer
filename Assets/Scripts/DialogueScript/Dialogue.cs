@@ -109,6 +109,8 @@ public class Dialogue : MonoBehaviour
     public TextMeshProUGUI textComponent;
     [TextArea(3,15)]
 
+    public GameObject objectivePopup;
+
     public string[] lines;
     public float textSpeed;
 
@@ -162,6 +164,12 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
+            // Dialogue ended, show objective popup
+            if (objectivePopup != null)
+            {
+                objectivePopup.SetActive(true);
+            }
+
             gameObject.SetActive(false);
             Time.timeScale = 1f;
         }
