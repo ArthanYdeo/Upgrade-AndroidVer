@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2904118274e5fb14cbee69dbb8866c60
+guid: 2242c90a2cba6c4439b425305857120d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -162,85 +162,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Punk_idle_0
+      name: Coins_topdown_outline_18x18res_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 17
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67a032b4ef231ff4b89b49d1600f2721
-      internalID: 1036232329
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Punk_idle_1
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 0
-        width: 17
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5fc74a622945e0c45897e46055a987b4
-      internalID: -1301626289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Punk_idle_2
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 0
-        width: 20
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 912f4d99f045c134fb4078329b4725e9
-      internalID: -797701664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Punk_idle_3
-      rect:
-        serializedVersion: 2
-        x: 148
+        x: 0
         y: 0
         width: 18
-        height: 34
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e566598730365e94aa68c2043b8281f1
-      internalID: -2064660196
+      spriteID: db13af031a076354fbd64d9b6ddb4e00
+      internalID: 1623930349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coins_topdown_outline_18x18res_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f72b812a28e64f45a791e2037f101a0
+      internalID: -1133594766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coins_topdown_outline_18x18res_2
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 0
+        width: 4
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9fb2265902a3c48b20eee357494927
+      internalID: -1961238213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coins_topdown_outline_18x18res_3
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 0
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f245091363a397a45addfece2ee99bc2
+      internalID: 1491064198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coins_topdown_outline_18x18res_4
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a7c65685342b043aadf6c447ddc19c
+      internalID: -960667357
       vertices: []
       indices: 
       edges: []
@@ -256,10 +277,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Punk_idle_0: 1036232329
-      Punk_idle_1: -1301626289
-      Punk_idle_2: -797701664
-      Punk_idle_3: -2064660196
+      Coins_topdown_outline_18x18res_0: 1623930349
+      Coins_topdown_outline_18x18res_1: -1133594766
+      Coins_topdown_outline_18x18res_2: -1961238213
+      Coins_topdown_outline_18x18res_3: 1491064198
+      Coins_topdown_outline_18x18res_4: -960667357
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
