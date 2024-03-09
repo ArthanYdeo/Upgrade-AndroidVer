@@ -19,7 +19,7 @@ public class ItemCollector : MonoBehaviour
             collectibles++;
             scrollText.text = "Score: " + collectibles;
         }
-        if (collectibles == 4)
+        if (collectibles == 5)
         {
             gameManager.Dialogue();
             gameManager.gameWin();
