@@ -63,14 +63,15 @@ public class NewPlayerMovement : MonoBehaviour
             playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
     }
 
-    private void OnCollisionEnter(Collision collision)
+      private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Finish"))
         {
             // Player collided with an obstacle, game over
             gameManager.Dialogue();
-            gameManager.gameWin();
+            gameManager.gameWin(); 
             Time.timeScale = 0; // Pause the game
         }
+        
     }
 }
