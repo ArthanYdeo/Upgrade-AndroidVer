@@ -15,16 +15,23 @@ public class ItemCollector : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Collectibles"))
         {
-            Destroy(collision.gameObject);
-            collectibles++;
-            scrollText.text = "Score: " + collectibles;
-        }
-        if (collectibles == 5)
-        {
-            gameManager.Dialogue();
-            gameManager.gameWin();
-            Time.timeScale = 0;
-            
+            // Check if the collectible has already been collected
+            if (!collision.gameObject.GetComponent<Collectible>().IsCollected)
+            {
+                // Mark the collectible as collected
+                collision.gameObject.GetComponent<Collectible>().IsCollected = true;
+
+                Destroy(collision.gameObject);
+                collectibles++;
+                scrollText.text = "Score: " + collectibles;
+
+                if (collectibles == 5)
+                {
+                    gameManager.Dialogue();
+                    gameManager.gameWin();
+                    Time.timeScale = 0;
+                }
+            }
         }
     }
 }
