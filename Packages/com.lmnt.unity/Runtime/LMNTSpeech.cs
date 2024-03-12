@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,6 +58,11 @@ public class LMNTSpeech : MonoBehaviour {
   private string LookupByName(string name) {
     return _voiceList.Find(v => v.name == name).id;
   }
-}
+
+        public void Speak(string v)
+        {
+            throw new NotImplementedException();
+        }
+    }
 
 }
