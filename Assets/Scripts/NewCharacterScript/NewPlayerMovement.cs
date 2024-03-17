@@ -6,6 +6,8 @@ public class NewPlayerMovement : MonoBehaviour
 {
     PlayerControls controls;
 
+    private bool isAttacking = false;
+
     float direction = 0;
     public float speed = 400;
     bool isFacingRight = true;
@@ -31,6 +33,11 @@ public class NewPlayerMovement : MonoBehaviour
         };
 
         controls.Land.Jump.performed += ctx => Jump();
+
+        // Start attack when pressed
+        controls.Land.Attack.started += ctx => StartAttack();
+        // Stop attack when released
+        controls.Land.Attack.canceled += ctx => StopAttack();
     }
     private void Start()
     {
@@ -63,7 +70,30 @@ public class NewPlayerMovement : MonoBehaviour
             playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
     }
 
-      private void OnCollisionEnter2D(Collision2D collision)
+    void StartAttack()
+    {
+        if (!isAttacking)
+        {
+            
+            animator.SetTrigger("Attack");
+            isAttacking = true; 
+        }
+    }
+
+    void StopAttack()
+    {
+        // Check if the Animator component is not null before accessing it
+        if (animator != null)
+        {
+            // Set trigger only if animator is not null
+            animator.ResetTrigger("Attack");
+        }
+
+        isAttacking = false;
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Finish"))
         {
