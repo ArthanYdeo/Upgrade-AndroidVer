@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerHealthCont : MonoBehaviour
+public class EnemyHealthCont : MonoBehaviour
 {
     public int maxHealth = 500;
     public int currentHealth;
 
     public HealthBar healthBar;
     public GameManagerScript gameManager;
-
 
 
 
@@ -24,42 +23,28 @@ public class PlayerHealthCont : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-            //TakeDamage(20);
-        
+
+        //TakeDamage(20);
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            TakeDamage(2);
-            
-        }
-        if (collision.gameObject.CompareTag("Outside"))
-        {
-            TakeDamage(maxHealth);
+            TakeDamage(30);
 
         }
+
         if (currentHealth == 0)
         {
-            gameManager.gameOver();
+            gameManager.Dialogue();
+            gameManager.gameWin();
             Time.timeScale = 0;
         }
-       
+
     }
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            TakeDamage(5);
-        }
-        if (currentHealth == 0)
-        {
-            gameManager.gameOver();
-            Time.timeScale = 0;
-        }
-    }
+   
 
     void TakeDamage(int damage)
     {
