@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
-  - enabled: 0
-    path: Assets/Scenes/Registration.unity
-    guid: 668a749701c8b8f4194a54fddf801eb4
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: f57182cc5c516b34b92befdccaf248ad
   - enabled: 1
     path: Assets/Scenes/Play Selection.unity
     guid: b7d836f1fdc74fb49b27d5ac4d4d684e
@@ -28,25 +28,25 @@ EditorBuildSettings:
     guid: 0232f5a1eb02cbd46988ac7159569752
   - enabled: 1
     path: Assets/Scenes/Objective Story 2.unity
-    guid: 370ac4f9fc789dd49acb4919fb162dd8
+    guid: 5ca3c393e30119c4cbe1eb1eb1f61492
   - enabled: 1
     path: Assets/Scenes/Chapter 2.unity
     guid: 30b96b487402e3b49b935f3e39885ed6
   - enabled: 1
     path: Assets/Scenes/Objective Story 3.unity
-    guid: 8290822bd895809489e1aa681f5fcb97
+    guid: c00cf2a2be4ffef48bbace12a2928061
   - enabled: 1
     path: Assets/Scenes/Chapter 3.unity
     guid: 905e542dc02afd840a501bd4c16a4dc5
   - enabled: 1
     path: Assets/Scenes/Objective Story 4.unity
-    guid: db3ad3f95f854d04f86f4a983c48295f
+    guid: 5e3f8d557e7377f4783de4eb932899ce
   - enabled: 1
     path: Assets/Scenes/Chapter 4.unity
     guid: 174bb1f87b2586f4e9da7da8d1d2997d
   - enabled: 1
     path: Assets/Scenes/Objective Story 5.unity
-    guid: e82c3ae330e1c4e46a915da8e618b870
+    guid: 18e22e1182980464984413582c3324cc
   - enabled: 1
     path: Assets/Scenes/Chapter 5.unity
     guid: 36946d9b1b2fc39419708ca45181dbba
