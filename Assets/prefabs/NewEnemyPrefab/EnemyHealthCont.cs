@@ -32,15 +32,17 @@ public class EnemyHealthCont : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            TakeDamage(30);
-
+            // Check if the collision is with a circle collider
+            Collider2D circleCollider = collision.collider as CircleCollider2D;
+            if (circleCollider != null)
+            {
+                TakeDamage(30);
+            }
         }
 
-        if (currentHealth == 0)
+        if (currentHealth <= 0)
         {
-            gameManager.Dialogue();
-            gameManager.gameWin();
-            Time.timeScale = 0;
+            Die();
         }
 
     }
@@ -51,5 +53,12 @@ public class EnemyHealthCont : MonoBehaviour
         currentHealth -= damage;
 
         healthBar.SetHealth(currentHealth);
+    }
+    void Die()
+    {
+        // Player's health is reduced to zero
+        gameManager.Dialogue();
+        gameManager.gameWin();
+        Time.timeScale = 0; // Pause the game
     }
 }

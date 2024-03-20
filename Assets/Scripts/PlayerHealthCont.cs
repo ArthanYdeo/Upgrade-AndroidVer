@@ -41,7 +41,7 @@ public class PlayerHealthCont : MonoBehaviour
             TakeDamage(maxHealth);
 
         }
-        if (currentHealth == 0)
+        if (currentHealth <= 0)
         {
             gameManager.gameOver();
             Time.timeScale = 0;
@@ -54,7 +54,7 @@ public class PlayerHealthCont : MonoBehaviour
         {
             TakeDamage(5);
         }
-        if (currentHealth == 0)
+        if (currentHealth <= 0)
         {
             gameManager.gameOver();
             Time.timeScale = 0;
