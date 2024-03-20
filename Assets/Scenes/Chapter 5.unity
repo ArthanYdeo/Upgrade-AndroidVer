@@ -7491,7 +7491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6843345933430284371, guid: b85cc44c53bafb444817845342f154dc, type: 3}
       propertyPath: sceneNameToLoad
-      value: Main Menu
+      value: Story
       objectReference: {fileID: 0}
     - target: {fileID: 7521955481496324477, guid: b85cc44c53bafb444817845342f154dc, type: 3}
       propertyPath: m_text
