@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 282.57745, y: 147.23633}
-  m_SizeDelta: {x: -598.8765, y: -322.3235}
+  m_AnchoredPosition: {x: 242.2, y: 146.12}
+  m_SizeDelta: {x: -499.6154, y: -332.2496}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &132295876
 MonoBehaviour:
@@ -242,11 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5d87509ac6a794a8434d35fdcf5983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectibleNames:
-  - design 1
-  - design 2-1
-  - new Char - idle - NFT
-  spawnAreaSize: {x: 10, y: 0, z: 10}
+  IsCollected: 0
 --- !u!1 &301654253
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,7 +971,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.2, y: 0}
+  m_Offset: {x: -2.41, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
