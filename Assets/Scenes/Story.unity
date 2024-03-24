@@ -1388,42 +1388,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284511097}
   m_CullTransparentMesh: 1
---- !u!1 &369118735
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 369118736}
-  m_Layer: 5
-  m_Name: Sliding Area
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &369118736
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369118735}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1892292134}
-  m_Father: {fileID: 1259472023}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: -20}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &370469033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2398,6 +2362,8 @@ GameObject:
   - component: {fileID: 577524499}
   - component: {fileID: 577524498}
   - component: {fileID: 577524497}
+  - component: {fileID: 577524500}
+  - component: {fileID: 577524501}
   m_Layer: 5
   m_Name: Prologue Button
   m_TagString: Untagged
@@ -2519,6 +2485,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577524495}
   m_CullTransparentMesh: 1
+--- !u!114 &577524500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577524495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b40e181ef7f384f5e895d4dc3eee0702, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voice: Daniel
+  dialogue: HELLLLLLLLLLLOOO NIGA
+--- !u!114 &577524501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577524495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a679b77828de294287eda55be392538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &591661683
 GameObject:
   m_ObjectHideFlags: 0
@@ -3779,132 +3771,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236865181}
   m_CullTransparentMesh: 1
---- !u!1 &1259472022
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1259472023}
-  - component: {fileID: 1259472026}
-  - component: {fileID: 1259472025}
-  - component: {fileID: 1259472024}
-  m_Layer: 5
-  m_Name: Scrollbar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1259472023
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259472022}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 369118736}
-  m_Father: {fileID: 1501909490}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 979, y: -97}
-  m_SizeDelta: {x: 73.74, y: 862.07}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1259472024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259472022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1892292135}
-  m_HandleRect: {fileID: 1892292134}
-  m_Direction: 2
-  m_Value: 1.0000008
-  m_Size: 0.5176178
-  m_NumberOfSteps: 1
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1259472025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259472022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1259472026
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259472022}
-  m_CullTransparentMesh: 1
 --- !u!1 &1272171915
 GameObject:
   m_ObjectHideFlags: 0
@@ -3995,7 +3861,9 @@ GameObject:
   - component: {fileID: 1282662495}
   - component: {fileID: 1282662494}
   - component: {fileID: 1282662496}
+  - component: {fileID: 1282662498}
   - component: {fileID: 1282662497}
+  - component: {fileID: 1282662499}
   m_Layer: 5
   m_Name: ProloguePanel
   m_TagString: Untagged
@@ -4021,7 +3889,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -36.221985}
+  m_AnchoredPosition: {x: 0, y: -36.221924}
   m_SizeDelta: {x: -401.48, y: -72.445}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1282662494
@@ -4088,61 +3956,91 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voice: Daniel
-  dialogue: 'Prologue: Shadows of Neon
+  dialogue: 
+--- !u!114 &1282662498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282662492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c5eefc5381c8b429fa7ea930333f49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 1520509625}
+  lines:
+  - 'Prologue: Shadows of Neon
 
 
 
-    In the heart of Neon Prime, where neon
-    lights painted the streets in vivid hues of electric blue and crimson red, a
-    tale of secrets and shadows was about to unfold. The city, a labyrinth of towering
-    skyscrapers and narrow alleys, held more mysteries than met the eye.
+    In the heart of Neon Prime, where neon lights
+    painted the streets in vivid hues of electric blue and crimson red, a tale of
+    secrets and shadows was about to unfold. The city, a labyrinth of towering skyscrapers
+    and narrow alleys, held more mysteries than met the eye.
 
 
 
-    Ed
-    T. Runner, a former athlete turned private investigator, found himself entangled
-    in a web of intrigue after the mysterious death of his brother, Edy T. Runner.
-    Neon Prime, a city where the line between human and machine blurred, was a place
-    of both wonder and danger.
+    Ed T. Runner,
+    a former athlete turned private investigator, found himself entangled in a web
+    of intrigue after the mysterious death of his brother, Edy T. Runner. Neon Prime,
+    a city where the line between human and machine blurred, was a place of both
+    wonder and danger.
 
 
 
-    The tale begins on a rainy night, the neon
-    lights reflecting off the slick pavement as Ed stood by his brother''s grave.
-    The loss weighed heavy on his shoulders, pushing him into a world he had never
-    imagined. A cryptic message arrived, setting him on a path that would lead him
-    to the enigmatic Neon Lotus, a symbol whispered in the darkest corners of the
-    city.
+    The tale begins on a rainy night, the neon lights reflecting
+    off the slick pavement as Ed stood by his brother''s grave. The loss weighed
+    heavy on his shoulders, pushing him into a world he had never imagined. A cryptic
+    message arrived, setting him on a path that would lead him to the enigmatic Neon
+    Lotus, a symbol whispered in the darkest corners of the city.
 
 
 
-    Unbeknownst to Ed, shadowy figures watched his every move, their
-    motives hidden in the depths of the city''s secrets. As he delved deeper into
-    the labyrinthine alleys and clandestine clubs, he would discover that his brother''s
-    death was no mere accident.
+    Unbeknownst
+    to Ed, shadowy figures watched his every move, their motives hidden in the depths
+    of the city''s secrets. As he delved deeper into the labyrinthine alleys and
+    clandestine clubs, he would discover that his brother''s death was no mere accident.
 
 
 
-    In the neon-soaked nights of Neon Prime, Ed
-    would face challenges that would test his resolve, encounters that would reveal
-    the city''s hidden truths, and enemies that would stop at nothing to protect
-    their secrets. The echoes of footsteps in empty alleys, the flickering of distant
-    neon signs - all whispered of a conspiracy that reached far beyond the city''s
-    skyline.
+    In
+    the neon-soaked nights of Neon Prime, Ed would face challenges that would test
+    his resolve, encounters that would reveal the city''s hidden truths, and enemies
+    that would stop at nothing to protect their secrets. The echoes of footsteps
+    in empty alleys, the flickering of distant neon signs - all whispered of a conspiracy
+    that reached far beyond the city''s skyline.
 
 
 
-    Little did Ed know that his journey would uncover not just the
-    truth about his brother''s death, but a revelation that would shake the very
-    foundations of Neon Prime. As the rain continued to fall, the city''s secrets
-    glistened like diamonds in the dark - waiting to be discovered, waiting to be
-    revealed in the unfolding saga of shadows and neon.
+    Little did Ed know that his
+    journey would uncover not just the truth about his brother''s death, but a revelation
+    that would shake the very foundations of Neon Prime. As the rain continued to
+    fall, the city''s secrets glistened like diamonds in the dark - waiting to be
+    discovered, waiting to be revealed in the unfolding saga of shadows and neon.
 
 
 
-    Welcome to "Upgrade:
-    Unraveling the Truth." The city''s secrets are waiting. It''s time to unveil
-    them.'
+    Welcome
+    to "Upgrade: Unraveling the Truth." The city''s secrets are waiting. It''s time
+    to unveil them.'
+  textSpeed: 0
+  lmntSpeech: {fileID: 1282662497}
+--- !u!114 &1282662499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282662492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59142ccc6702df3499ea528a97adc665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  content: {fileID: 1520509624}
+  scrollSpeed: 20
 --- !u!1 &1309320100
 GameObject:
   m_ObjectHideFlags: 0
@@ -5076,7 +4974,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1259472023}
   - {fileID: 1520509624}
   m_Father: {fileID: 1282662493}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5107,7 +5004,7 @@ MonoBehaviour:
   m_ScrollSensitivity: 1
   m_Viewport: {fileID: 0}
   m_HorizontalScrollbar: {fileID: 0}
-  m_VerticalScrollbar: {fileID: 1259472024}
+  m_VerticalScrollbar: {fileID: 0}
   m_HorizontalScrollbarVisibility: 0
   m_VerticalScrollbarVisibility: 0
   m_HorizontalScrollbarSpacing: 0
@@ -6095,81 +5992,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790131738}
-  m_CullTransparentMesh: 1
---- !u!1 &1892292133
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1892292134}
-  - component: {fileID: 1892292136}
-  - component: {fileID: 1892292135}
-  m_Layer: 5
-  m_Name: Handle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1892292134
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892292133}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 369118736}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.48238218}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1892292135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892292133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1892292136
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892292133}
   m_CullTransparentMesh: 1
 --- !u!1 &1907398441
 GameObject:
