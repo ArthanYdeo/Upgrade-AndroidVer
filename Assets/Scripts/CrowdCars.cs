@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CrowdCars : MonoBehaviour
 {
-      public float moveSpeed = 2f; // Speed of the car
+    public float moveSpeed = 2f; // Speed of the car
     public float avoidRadius = 2f; // Radius to avoid other cars
     public LayerMask obstacleMask; // Layer mask for obstacles (other cars)
 
@@ -17,14 +17,10 @@ public class CrowdCars : MonoBehaviour
         moveDirection = Random.insideUnitCircle.normalized; // Random initial movement direction
     }
 
-    void Update()
-    {
-        AvoidObstacles();
-    }
-
     void FixedUpdate()
     {
         Move();
+        AvoidObstacles();
     }
 
     void Move()
@@ -46,7 +42,7 @@ public class CrowdCars : MonoBehaviour
                 avoidDirection += (Vector2)(transform.position - obstacle.transform.position).normalized;
             }
 
-            moveDirection += avoidDirection.normalized;
+            moveDirection = Quaternion.Euler(0, 0, Random.Range(-30f, 30f)) * moveDirection; // Randomly adjust direction
         }
     }
 
