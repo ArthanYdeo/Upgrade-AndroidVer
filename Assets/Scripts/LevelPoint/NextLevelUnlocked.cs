@@ -2,23 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class NewBehaviourScript : MonoBehaviour
+public class NextLevelUnlocked : MonoBehaviour
 {
-    [SerializeField] public GameManagerScript gameManager;
 
+    public GameManagerScript gameManager;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            // Player collided with an obstacle, game over
             UnlockNewLevel();
-            gameManager.DialogueBoxCipher();
+            gameManager.Dialogue();
             gameManager.gameWin();
-            Time.timeScale = 0;
-
+            Time.timeScale = 0; // Pause the game
         }
+
     }
+
     void UnlockNewLevel()
     {
         if (SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))

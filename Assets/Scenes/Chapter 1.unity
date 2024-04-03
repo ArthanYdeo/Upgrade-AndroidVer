@@ -2308,6 +2308,7 @@ GameObject:
   - component: {fileID: 990846459}
   - component: {fileID: 990846458}
   - component: {fileID: 990846461}
+  - component: {fileID: 990846462}
   m_Layer: 5
   m_Name: WIN
   m_TagString: Finish
@@ -2417,6 +2418,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 13.71, y: 50.04}
   m_EdgeRadius: 0
+--- !u!114 &990846462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990846457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc7167036ba4b0478c9d8ea6830b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1002403399}
 --- !u!1 &1002403398
 GameObject:
   m_ObjectHideFlags: 0
@@ -4748,11 +4762,11 @@ PrefabInstance:
       objectReference: {fileID: 1002403399}
     - target: {fileID: 7318723642477695979, guid: ce1aa3a26fbd1fa4d8d30caf687933d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7
+      value: 100.3
       objectReference: {fileID: 0}
     - target: {fileID: 7318723642477695979, guid: ce1aa3a26fbd1fa4d8d30caf687933d6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.9
+      value: 7.2
       objectReference: {fileID: 0}
     - target: {fileID: 7318723642477695979, guid: ce1aa3a26fbd1fa4d8d30caf687933d6, type: 3}
       propertyPath: m_LocalPosition.z

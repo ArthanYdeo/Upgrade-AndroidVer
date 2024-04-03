@@ -93,7 +93,7 @@ public class NewPlayerMovement : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Finish"))
         {
@@ -103,5 +103,5 @@ public class NewPlayerMovement : MonoBehaviour
             Time.timeScale = 0; // Pause the game
         }
         
-    }
+    }*/
 }
