@@ -2707,9 +2707,17 @@ PrefabInstance:
         fight, determined to reach Dr. Roxanne Welch and complete their mission to
         rid the city of SynapseMaster's influence once and for all.)
       objectReference: {fileID: 0}
+    - target: {fileID: 4900138185395896638, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: m_text
+      value: NEXT CHAPTER
+      objectReference: {fileID: 0}
     - target: {fileID: 6211529986563702919, guid: b85cc44c53bafb444817845342f154dc, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6843345933430284371, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: sceneNameToLoad
+      value: Objective Story 5
       objectReference: {fileID: 0}
     - target: {fileID: 7230526199125851679, guid: b85cc44c53bafb444817845342f154dc, type: 3}
       propertyPath: m_AnchoredPosition.x

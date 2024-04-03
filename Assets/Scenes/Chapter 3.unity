@@ -604,9 +604,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: restart
       objectReference: {fileID: 0}
+    - target: {fileID: 4900138185395896638, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: m_text
+      value: NEXT CHAPTER
+      objectReference: {fileID: 0}
     - target: {fileID: 6211529986563702919, guid: b85cc44c53bafb444817845342f154dc, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6843345933430284371, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: sceneNameToLoad
+      value: Objective Story 4
       objectReference: {fileID: 0}
     - target: {fileID: 7323695078168591021, guid: b85cc44c53bafb444817845342f154dc, type: 3}
       propertyPath: m_fontAsset
