@@ -384,6 +384,7 @@ GameObject:
   - component: {fileID: 1040464780}
   - component: {fileID: 1040464779}
   - component: {fileID: 1040464778}
+  - component: {fileID: 1040464781}
   m_Layer: 5
   m_Name: Tap to start
   m_TagString: Untagged
@@ -455,25 +456,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2104971073}
-        m_TargetAssemblyTypeName: play, Assembly-CSharp
-        m_MethodName: TaptoStart
+      - m_Target: {fileID: 1040464781}
+        m_TargetAssemblyTypeName: JumpToScene, Assembly-CSharp
+        m_MethodName: JumpToSceneName
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: play, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -517,6 +506,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1040464776}
   m_CullTransparentMesh: 1
+--- !u!114 &1040464781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040464776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188e50a8f89b71247a73a283c69e9651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNameToLoad: MetaMask Main (Sample)
 --- !u!1 &1284880954
 GameObject:
   m_ObjectHideFlags: 0

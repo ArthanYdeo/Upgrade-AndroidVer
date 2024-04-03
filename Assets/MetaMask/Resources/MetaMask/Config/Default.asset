@@ -19,5 +19,4 @@ MonoBehaviour:
   userAgent: UnityUGUITransport/1.0.0
   encrypt: 1
   encryptionPassword: UnityUGUITransport/1.0.0
-  sessionIdentifier: metamask.session.data
   socketUrl: https://metamask-sdk-socket.metafi.codefi.network/
