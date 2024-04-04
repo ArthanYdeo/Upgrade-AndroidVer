@@ -9,6 +9,9 @@ public class EnemyLaserBulletScript : MonoBehaviour
     private Rigidbody2D rb;
     public float force;
 
+    //public AudioSource audioPlayer;
+    public AudioClip audioClip;
+
     private float timer;
     // Start is called before the first frame update
     void Start()
@@ -21,6 +24,8 @@ public class EnemyLaserBulletScript : MonoBehaviour
 
         float rot = Mathf.Atan2(-direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, rot + 100);
+
+        //audioPlayer.clip = audioClip;
     }
 
     // Update is called once per frame
@@ -40,6 +45,15 @@ public class EnemyLaserBulletScript : MonoBehaviour
         {
             //other.gameObject.GetComponent<PlayerHealthCont>().currentHealth -= 10;
             Destroy(gameObject);
+            //audioPlayer.Play();
+            PlayAudioClip();
+        }
+    }
+    private void PlayAudioClip()
+    {
+        if (audioClip != null)
+        {
+            AudioSource.PlayClipAtPoint(audioClip, transform.position);
         }
     }
 }

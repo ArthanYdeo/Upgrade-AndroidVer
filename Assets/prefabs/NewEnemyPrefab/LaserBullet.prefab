@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 5
+  audioClip: {fileID: 8300000, guid: ba45fe77ce9d22a4db281fb99a0dc975, type: 3}
 --- !u!61 &3460253376551415947
 BoxCollider2D:
   m_ObjectHideFlags: 0
