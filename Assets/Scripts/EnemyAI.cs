@@ -11,7 +11,7 @@ public class EnemyAI : MonoBehaviour
     public Transform target;
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
-    
+    public AudioClip audioClip;
 
     public Transform enemyGFX;
 
@@ -82,6 +82,22 @@ public class EnemyAI : MonoBehaviour
         else if (force.x <= -0.01f)
         {
             enemyGFX.localScale = new Vector3(1f, 1f, 1f);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+          
+            PlayAudioClip();
+        }
+    }
+    private void PlayAudioClip()
+    {
+        if (audioClip != null)
+        {
+            AudioSource.PlayClipAtPoint(audioClip, transform.position);
         }
     }
 }

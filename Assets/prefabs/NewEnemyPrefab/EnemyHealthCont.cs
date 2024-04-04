@@ -11,6 +11,7 @@ public class EnemyHealthCont : MonoBehaviour
     public HealthBar healthBar;
     public GameManagerScript gameManager;
 
+    public AudioClip audioClip;
 
 
     // Start is called before the first frame update
@@ -37,7 +38,9 @@ public class EnemyHealthCont : MonoBehaviour
             if (circleCollider != null)
             {
                 TakeDamage(30);
+                PlayAudioClip();
             }
+            PlayAudioClip();
         }
 
         if (currentHealth <= 0)
@@ -69,6 +72,14 @@ public class EnemyHealthCont : MonoBehaviour
             PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
             PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
             PlayerPrefs.Save();
+        }
+    }
+
+    private void PlayAudioClip()
+    {
+        if (audioClip != null)
+        {
+            AudioSource.PlayClipAtPoint(audioClip, transform.position);
         }
     }
 }
