@@ -22,7 +22,7 @@ dependencyResolutionManagement {
             url "https://repo.maven.apache.org/maven2" // Assets/MetaMask/Editor/MetaMaskDependencies.xml:12
         }
         maven {
-            url (unityProjectPath + "/Assets/GeneratedLocalRepo/Firebase/m2repository") // Assets/Firebase/Editor/AppDependencies.xml:22, Assets/Firebase/Editor/RemoteConfigDependencies.xml:20
+            url (unityProjectPath + "/Assets/GeneratedLocalRepo/Firebase/m2repository") // Assets/Firebase/Editor/AppDependencies.xml:22, Assets/Firebase/Editor/AuthDependencies.xml:20, Assets/Firebase/Editor/DatabaseDependencies.xml:22, Assets/Firebase/Editor/RemoteConfigDependencies.xml:20
         }
         maven {
             url "https://maven.google.com" // Assets/MetaMask/Editor/MetaMaskDependencies.xml:41

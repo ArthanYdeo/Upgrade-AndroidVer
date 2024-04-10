@@ -4,12 +4,16 @@ apply plugin: 'com.android.library'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 // Android Resolver Dependencies Start
-    implementation 'com.google.android.gms:play-services-base:18.3.0' // Assets/Firebase/Editor/AppDependencies.xml:17
+    implementation 'com.google.android.gms:play-services-base:18.3.0' // Assets/Firebase/Editor/DatabaseDependencies.xml:17
     implementation 'com.google.firebase:firebase-analytics:21.5.1' // Assets/Firebase/Editor/RemoteConfigDependencies.xml:15
     implementation 'com.google.firebase:firebase-app-unity:11.8.1' // Assets/Firebase/Editor/AppDependencies.xml:22
+    implementation 'com.google.firebase:firebase-auth:22.3.1' // Assets/Firebase/Editor/AuthDependencies.xml:13
+    implementation 'com.google.firebase:firebase-auth-unity:11.8.1' // Assets/Firebase/Editor/AuthDependencies.xml:20
     implementation 'com.google.firebase:firebase-common:20.4.2' // Assets/Firebase/Editor/AppDependencies.xml:13
     implementation 'com.google.firebase:firebase-config:21.6.3' // Assets/Firebase/Editor/RemoteConfigDependencies.xml:13
     implementation 'com.google.firebase:firebase-config-unity:11.8.1' // Assets/Firebase/Editor/RemoteConfigDependencies.xml:20
+    implementation 'com.google.firebase:firebase-database:20.3.1' // Assets/Firebase/Editor/DatabaseDependencies.xml:13
+    implementation 'com.google.firebase:firebase-database-unity:11.8.1' // Assets/Firebase/Editor/DatabaseDependencies.xml:22
     implementation 'com.squareup.okhttp3:okhttp:4.10.0' // Assets/MetaMask/Editor/MetaMaskDependencies.xml:41
 // Android Resolver Dependencies End
 **DEPS**}
