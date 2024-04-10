@@ -1,4 +1,4 @@
-Library: C:\Users\asus\Documents\GitHub\upgrade android version\Upgrade-AndroidVer\Temp\BurstOutput\tempburstlibs\armeabi-v7a\lib_burst_generated
+Library: E:\Unity Proj\Upgrade-AndroidVer\Temp\BurstOutput\tempburstlibs\armeabi-v7a\lib_burst_generated
 --platform=Android
 --backend=burst-llvm-15
 --target=ARMV7A_NEON32
@@ -42,17 +42,12 @@ Library: C:\Users\asus\Documents\GitHub\upgrade android version\Upgrade-AndroidV
 --assembly-defines=zxing.unity;
 --assembly-defines=ImpromptuInterface;
 --assembly-defines=evm.net;
---assembly-defines=Firebase.App;
 --assembly-defines=Microsoft.Bcl.AsyncInterfaces;
 --assembly-defines=EventEmitter.NET;
 --assembly-defines=System.Reactive;
---assembly-defines=Firebase.TaskExtension;
 --assembly-defines=MetaMask.SDK;
 --assembly-defines=Dynamitey;
---assembly-defines=Firebase.Auth;
 --assembly-defines=System.Text.Encodings.Web;
---assembly-defines=Firebase.Installations;
---assembly-defines=Firebase.Database;
 --assembly-defines=BouncyCastle.Crypto;
 --assembly-defines=Nethereum.Hex;
 --assembly-defines=System.Runtime.CompilerServices.Unsafe;
@@ -60,8 +55,6 @@ Library: C:\Users\asus\Documents\GitHub\upgrade android version\Upgrade-AndroidV
 --assembly-defines=Unity.Burst.Unsafe;
 --assembly-defines=System.Text.Json;
 --assembly-defines=Newtonsoft.Json;
---assembly-defines=Firebase.Platform;
---assembly-defines=Google.MiniJson;
 --assembly-defines=Pathfinding.Ionic.Zip.Reduced;
 --assembly-defines=System.Buffers;
 --assembly-defines=System.Collections;
@@ -107,11 +100,10 @@ Library: C:\Users\asus\Documents\GitHub\upgrade android version\Upgrade-AndroidV
 --assembly-defines=System;
 --assembly-defines=mscorlib;
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=C:\Users\asus\Documents\GitHub\upgrade android version\Upgrade-AndroidVer\Temp\Burst
---debug=Full
---key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/AndroidPlayer
---decode-folder=C:\Users\asus\Documents\GitHub\upgrade android version\Upgrade-AndroidVer\Library\Burst
---output=C:\Users\asus\Documents\GitHub\upgrade android version\Upgrade-AndroidVer\Temp\BurstOutput\tempburstlibs\armeabi-v7a\lib_burst_generated
+--temp-folder=E:\Unity Proj\Upgrade-AndroidVer\Temp\Burst
+--key-folder=D:/2022.3.5f1/Editor/Data/PlaybackEngines/AndroidPlayer
+--decode-folder=E:\Unity Proj\Upgrade-AndroidVer\Library\Burst
+--output=E:\Unity Proj\Upgrade-AndroidVer\Temp\BurstOutput\tempburstlibs\armeabi-v7a\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10
