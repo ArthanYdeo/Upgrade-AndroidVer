@@ -1080,7 +1080,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &536542010
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1547,7 +1547,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &578917286
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2794,6 +2794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1002403399}
+  sceneName: Ch1OutroScene
 --- !u!1 &1002403398
 GameObject:
   m_ObjectHideFlags: 0
@@ -5328,11 +5329,11 @@ PrefabInstance:
       objectReference: {fileID: 1002403399}
     - target: {fileID: 7318723642477695979, guid: ce1aa3a26fbd1fa4d8d30caf687933d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5
+      value: 92.5
       objectReference: {fileID: 0}
     - target: {fileID: 7318723642477695979, guid: ce1aa3a26fbd1fa4d8d30caf687933d6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.1
+      value: 6.1
       objectReference: {fileID: 0}
     - target: {fileID: 7318723642477695979, guid: ce1aa3a26fbd1fa4d8d30caf687933d6, type: 3}
       propertyPath: m_LocalPosition.z
