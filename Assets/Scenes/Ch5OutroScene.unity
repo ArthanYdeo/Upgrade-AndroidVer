@@ -2087,7 +2087,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c5bdca517b0b14440a6f1a4592aa108f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2206,6 +2206,10 @@ PlayableDirector:
     value: {fileID: 1405406766}
   - key: {fileID: 6078109458008321966, guid: abb50c71934d1584ab6e13f7139ea935, type: 2}
     value: {fileID: 418284501}
+  - key: {fileID: 1112975788443249077, guid: abb50c71934d1584ab6e13f7139ea935, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 3158106527846994098, guid: abb50c71934d1584ab6e13f7139ea935, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1512727695
@@ -2280,7 +2284,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 49133caa9b78be547a67c349c89662c4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2785,7 +2789,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 21399513395380149b018c11c7fa813e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
