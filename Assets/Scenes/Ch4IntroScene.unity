@@ -891,6 +891,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skip
       objectReference: {fileID: 0}
+    - target: {fileID: 7195450096955755789, guid: cb818738305dd1244b46765f3cf435fa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8842343277599160689, guid: cb818738305dd1244b46765f3cf435fa, type: 3}
       propertyPath: skipTime
       value: 40.56816
@@ -961,11 +965,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9122183755286420851, guid: cb818738305dd1244b46765f3cf435fa, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -241.33643
+      value: -191
       objectReference: {fileID: 0}
     - target: {fileID: 9122183755286420851, guid: cb818738305dd1244b46765f3cf435fa, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -837.381
+      value: -139
       objectReference: {fileID: 0}
     - target: {fileID: 9122183755286420851, guid: cb818738305dd1244b46765f3cf435fa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

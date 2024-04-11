@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id">
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id">
+  <string name="firebase_database_url" translatable="false">https://upgrade-3e7ca-default-rtdb.asia-southeast1.firebasedatabase.app</string>
   <string name="gcm_defaultSenderId" translatable="false">894162523395</string>
   <string name="google_storage_bucket" translatable="false">upgrade-3e7ca.appspot.com</string>
   <string name="project_id" translatable="false">upgrade-3e7ca</string>

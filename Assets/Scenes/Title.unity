@@ -518,7 +518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 188e50a8f89b71247a73a283c69e9651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNameToLoad: MetaMask Main (Sample)
+  sceneNameToLoad: Login
 --- !u!1 &1284880954
 GameObject:
   m_ObjectHideFlags: 0
