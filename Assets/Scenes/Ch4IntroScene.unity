@@ -498,7 +498,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 7dde4182cde404848861be5b5dcf6cbc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -568,6 +568,8 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 5252417224537090953, guid: 60e182b117b33bc4fadb3bee0b3bd4f6, type: 2}
     value: {fileID: 1394953413}
+  - key: {fileID: -8602556287600898368, guid: 60e182b117b33bc4fadb3bee0b3bd4f6, type: 2}
+    value: {fileID: 1844811348}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1220290315
@@ -985,6 +987,11 @@ PrefabInstance:
 --- !u!224 &1844811347 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9122183755286420851, guid: cb818738305dd1244b46765f3cf435fa, type: 3}
+  m_PrefabInstance: {fileID: 1844811346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1844811348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7195450096955755789, guid: cb818738305dd1244b46765f3cf435fa, type: 3}
   m_PrefabInstance: {fileID: 1844811346}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1939986372
