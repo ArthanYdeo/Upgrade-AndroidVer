@@ -279,7 +279,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &93455949
 RectTransform:
   m_ObjectHideFlags: 0
@@ -483,7 +483,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &414164670
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7871,6 +7871,10 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 978062680}
+    - target: {fileID: 6047376879260305083, guid: ce1aa3a26fbd1fa4d8d30caf687933d6, type: 3}
+      propertyPath: sceneName
+      value: Ch2OutroScene
+      objectReference: {fileID: 0}
     - target: {fileID: 6047376879260305083, guid: ce1aa3a26fbd1fa4d8d30caf687933d6, type: 3}
       propertyPath: scrollText
       value: 

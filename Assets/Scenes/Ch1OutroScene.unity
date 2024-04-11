@@ -1050,7 +1050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3c4dace99cb72741a20bc8639a9c37f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Chapter1: Chapter 2
+  Chapter1: Ch2IntroScene
 --- !u!320 &2124912571
 PlayableDirector:
   m_ObjectHideFlags: 0

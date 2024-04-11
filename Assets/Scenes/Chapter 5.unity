@@ -2720,7 +2720,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &957315778
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2772,7 +2772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &984829900
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9302,6 +9302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 500
   currentHealth: 0
+  sceneName: Ch5OutroScene
   healthBar: {fileID: 212690218}
   gameManager: {fileID: 1436196357}
   audioClip: {fileID: 8300000, guid: fd6cfac714de7b843a7820f7025a51bf, type: 3}
