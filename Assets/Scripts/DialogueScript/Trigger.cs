@@ -7,15 +7,17 @@ using UnityEngine.UI;
 public class NewBehaviourScript : MonoBehaviour
 {
     [SerializeField] public GameManagerScript gameManager;
+    public string sceneName;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             UnlockNewLevel();
-            gameManager.DialogueBoxCipher();
+            SceneManager.LoadScene(sceneName);
+            //gameManager.DialogueBoxCipher();
             gameManager.gameWin();
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
 
         }
     }

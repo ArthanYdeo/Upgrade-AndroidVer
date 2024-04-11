@@ -9,6 +9,7 @@ public class ItemCollector : MonoBehaviour
 {
     public GameManagerScript gameManager;
     private int collectibles = 0;
+    public string sceneName;
     [SerializeField] private TextMeshProUGUI scrollText;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -27,10 +28,11 @@ public class ItemCollector : MonoBehaviour
 
                 if (collectibles == 5)
                 {
+                    SceneManager.LoadScene(sceneName);
                     UnlockNewLevel();
-                    gameManager.Dialogue();
-                    gameManager.gameWin();
-                    Time.timeScale = 0;
+                   // gameManager.Dialogue();
+                   // gameManager.gameWin();
+                   // Time.timeScale = 0;
                 }
             }
         }

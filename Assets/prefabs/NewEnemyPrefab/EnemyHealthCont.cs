@@ -8,6 +8,8 @@ public class EnemyHealthCont : MonoBehaviour
     public int maxHealth = 500;
     public int currentHealth;
 
+    public string sceneName;
+
     public HealthBar healthBar;
     public GameManagerScript gameManager;
 
@@ -60,10 +62,11 @@ public class EnemyHealthCont : MonoBehaviour
     }
     void Die()
     {
+        SceneManager.LoadScene(sceneName);
         // Player's health is reduced to zero
-        gameManager.Dialogue();
+        //gameManager.Dialogue();
         gameManager.gameWin();
-        Time.timeScale = 0; // Pause the game
+        //Time.timeScale = 0; // Pause the game
     }
     void UnlockNewLevel()
     {
