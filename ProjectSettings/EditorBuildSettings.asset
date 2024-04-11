@@ -59,6 +59,33 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ch1OutroScene.unity
     guid: 7f53d5fbd43673749b628a750d4fa936
+  - enabled: 1
+    path: Assets/Scenes/Ch1IntroCutScene.unity
+    guid: b9f10a4d2b13b6e4aaa11f4a3921bf4e
+  - enabled: 1
+    path: Assets/Scenes/Ch2IntroScene.unity
+    guid: ff9258851f7aedc469d442d1aae87ec5
+  - enabled: 1
+    path: Assets/Scenes/Ch2OutroScene.unity
+    guid: ba214307c1bff7c42875b89d443d2a96
+  - enabled: 1
+    path: Assets/Scenes/Ch3IntroScene.unity
+    guid: 60a7e0b56c99ab24585d3f5e84c522b8
+  - enabled: 1
+    path: Assets/Scenes/Ch3OutroScene.unity
+    guid: 9a4fc38bdb5a93843b74516eaf070964
+  - enabled: 1
+    path: Assets/Scenes/Ch4IntroScene.unity
+    guid: 65e3ebef25bb75b47ac4bbd39c9863b8
+  - enabled: 1
+    path: Assets/Scenes/Ch4OutroScene.unity
+    guid: c3807149f062cf84ea787d0528efd651
+  - enabled: 1
+    path: Assets/Scenes/Ch5IntroScene.unity
+    guid: 29088f443c542234f94b5e8af0850b8e
+  - enabled: 1
+    path: Assets/Scenes/Ch5OutroScene.unity
+    guid: e74959fc6763ead4a92becb6a9909d0b
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 8d2f5b1a674586b49a2f7045cff20dd8, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: d2ae2def5b380744f9bc529802d0d649, type: 2}
