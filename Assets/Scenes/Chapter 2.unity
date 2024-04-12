@@ -918,6 +918,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 886799209830633612, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 978062680}
+    - target: {fileID: 886799209830633612, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: pause
+      objectReference: {fileID: 0}
     - target: {fileID: 939276919134660397, guid: b85cc44c53bafb444817845342f154dc, type: 3}
       propertyPath: m_SizeDelta.x
       value: 687.0436
@@ -1241,18 +1249,19 @@ PrefabInstance:
     - {fileID: 1956084419610586761, guid: b85cc44c53bafb444817845342f154dc, type: 3}
     - {fileID: 1838790006922745149, guid: b85cc44c53bafb444817845342f154dc, type: 3}
     - {fileID: 7409096799834659093, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+    - {fileID: 88888986471192759, guid: b85cc44c53bafb444817845342f154dc, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3323906184465085165, guid: b85cc44c53bafb444817845342f154dc, type: 3}
       insertIndex: 0
       addedObject: {fileID: 1284876950}
     - targetCorrespondingSourceObject: {fileID: 3323906184465085165, guid: b85cc44c53bafb444817845342f154dc, type: 3}
-      insertIndex: 8
+      insertIndex: 7
       addedObject: {fileID: 414164670}
     - targetCorrespondingSourceObject: {fileID: 3323906184465085165, guid: b85cc44c53bafb444817845342f154dc, type: 3}
-      insertIndex: 9
+      insertIndex: 8
       addedObject: {fileID: 93455949}
     - targetCorrespondingSourceObject: {fileID: 3323906184465085165, guid: b85cc44c53bafb444817845342f154dc, type: 3}
-      insertIndex: 10
+      insertIndex: 9
       addedObject: {fileID: 1392820637}
     - targetCorrespondingSourceObject: {fileID: 2750337036819208925, guid: b85cc44c53bafb444817845342f154dc, type: 3}
       insertIndex: -1

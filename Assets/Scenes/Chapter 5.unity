@@ -7666,6 +7666,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 886799209830633612, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1436196357}
+    - target: {fileID: 886799209830633612, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: pause
+      objectReference: {fileID: 0}
     - target: {fileID: 1287967596326287577, guid: b85cc44c53bafb444817845342f154dc, type: 3}
       propertyPath: m_text
       value: defeat the enemies
@@ -9211,7 +9219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1642117417138037656, guid: 0f1cd4f29c98495488688067e51bacb2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 46.6
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1642117417138037656, guid: 0f1cd4f29c98495488688067e51bacb2, type: 3}
       propertyPath: m_LocalPosition.z

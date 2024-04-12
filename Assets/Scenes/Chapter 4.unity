@@ -2984,6 +2984,14 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 886799209830633612, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1141675169}
+    - target: {fileID: 886799209830633612, guid: b85cc44c53bafb444817845342f154dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: pause
+      objectReference: {fileID: 0}
     - target: {fileID: 939276919134660397, guid: b85cc44c53bafb444817845342f154dc, type: 3}
       propertyPath: m_SizeDelta.x
       value: 681.6656
