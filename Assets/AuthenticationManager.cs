@@ -3,6 +3,7 @@ using Firebase;
 using Firebase.Auth;
 using Firebase.Database;
 using System.Collections;
+using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System.Threading.Tasks;
@@ -10,6 +11,8 @@ using System.Threading.Tasks;
 public class AuthenticationManager : MonoBehaviour
 {
     public string sceneNameToLoad;
+
+    public GameObject successPanel;
     public TMP_InputField registerUsernameInput;
     public TMP_InputField registerEmailInput;
     public TMP_InputField registerPasswordInput;
@@ -43,36 +46,36 @@ public class AuthenticationManager : MonoBehaviour
     }
 
     public void Register()
-    {
-        string username = registerUsernameInput.text;
-        string email = registerEmailInput.text;
-        string password = registerPasswordInput.text;
-        string wallet = registerWalletInput.text;
+{
+    string username = registerUsernameInput.text;
+    string email = registerEmailInput.text;
+    string password = registerPasswordInput.text;
+    string wallet = registerWalletInput.text;
 
-        // Check for empty fields
-        if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(wallet))
+    // Check for empty fields
+    if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(wallet))
+    {
+        Debug.LogWarning("Please fill in all fields.");
+        return;
+    }
+
+    // Create user with email and password
+    auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWith(task =>
+    {
+        if (task.IsCanceled || task.IsFaulted)
         {
-            Debug.LogWarning("Please fill in all fields.");
+            Debug.LogError("Failed to register user: " + task.Exception);
             return;
         }
 
-        // Create user with email and password
-        auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWith(task =>
-        {
-            if (task.IsCanceled || task.IsFaulted)
-            {
-                Debug.LogError("Failed to register user: " + task.Exception);
-                return;
-            }
+        // Registration successful, get user's unique ID
+        Firebase.Auth.FirebaseUser newUser = task.Result.User;
+        string userId = newUser.UserId;
 
-            // Registration successful, get user's unique ID
-            Firebase.Auth.FirebaseUser newUser = task.Result.User;
-            string userId = newUser.UserId;
-
-            // Save additional user data to database
-            var userData = new UserData(username, email, wallet);
-             string userDataJson = JsonUtility.ToJson(userData);
-            dbRef.Child("users").Child(userId).SetRawJsonValueAsync(userDataJson)
+        // Save additional user data to database
+        var userData = new UserData(username, email, wallet);
+        string userDataJson = JsonUtility.ToJson(userData);
+        dbRef.Child("users").Child(userId).SetRawJsonValueAsync(userDataJson)
             .ContinueWith(writeTask =>
             {
                 if (writeTask.IsFaulted || writeTask.IsCanceled)
@@ -82,6 +85,10 @@ public class AuthenticationManager : MonoBehaviour
                 else
                 {
                     Debug.Log("User registered successfully!");
+                    
+                    // Show success panel
+                    SwitchToSuccessPanel();
+                    Debug.Log("Success panel shown!");
                 }
             });
     });
@@ -124,6 +131,11 @@ public class AuthenticationManager : MonoBehaviour
                 Debug.Log("Loading next scene...");
                 SceneManager.LoadScene(sceneNameToLoad);
             }, TaskScheduler.FromCurrentSynchronizationContext());
+    }
+
+     private void SwitchToSuccessPanel()
+    {
+        successPanel.SetActive(true);
     }
 
 
