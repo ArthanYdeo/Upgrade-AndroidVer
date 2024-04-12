@@ -12,9 +12,8 @@ using UnityEngine.Networking;
 
 public class AuthenticationManager : MonoBehaviour
 {
+    public GameObject SuccessPanel;
     public string sceneNameToLoad;
-
-    public GameObject successPanel;
     public TMP_InputField registerUsernameInput;
     public TMP_InputField registerEmailInput;
     public TMP_InputField registerPasswordInput;
@@ -31,7 +30,7 @@ public class AuthenticationManager : MonoBehaviour
     private const string metaMaskAppURI = "metamask://auth";
 
 
-    private void Start()
+    public virtual void Start()
     {
         // Initialize Firebase
         FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
@@ -48,8 +47,7 @@ public class AuthenticationManager : MonoBehaviour
             }
         });
     }
-
-    public void Register()
+public void Register()
 {
     string username = registerUsernameInput.text;
     string email = registerEmailInput.text;
@@ -66,6 +64,7 @@ public class AuthenticationManager : MonoBehaviour
     // Create user with email and password
     auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWith(task =>
     {
+        Debug.Log("Clicked Signup");
         if (task.IsCanceled || task.IsFaulted)
         {
             Debug.LogError("Failed to register user: " + task.Exception);
@@ -85,18 +84,22 @@ public class AuthenticationManager : MonoBehaviour
                 if (writeTask.IsFaulted || writeTask.IsCanceled)
                 {
                     Debug.LogError("Failed to write user data to database: " + writeTask.Exception);
+                    return;
                 }
-                else
-                {
-                    Debug.Log("User registered successfully!");
-                    
-                    // Show success panel
-                    SwitchToSuccessPanel();
-                    Debug.Log("Success panel shown!");
-                }
+
+                Debug.LogFormat("Signed up Successfully: {0} ({1})", newUser.DisplayName, newUser.UserId);
+
+                // Switch to the success panel
+                SwitchToSuccessPanel();
             });
     });
 }
+
+private void SwitchToSuccessPanel()
+{
+    SuccessPanel.SetActive(true);
+}
+
 
      public void Login()
     {
@@ -204,11 +207,7 @@ public class AuthenticationManager : MonoBehaviour
         // Handle authentication failure, display error message, etc.
     }
 
-    private void SwitchToSuccessPanel()
-    {
-        successPanel.SetActive(true);
-    }
-
+  
     [System.Serializable]
     public class UserData
     {
