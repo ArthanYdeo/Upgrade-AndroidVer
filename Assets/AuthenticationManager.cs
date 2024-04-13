@@ -140,6 +140,28 @@ private void SwitchToSuccessPanel()
             }, TaskScheduler.FromCurrentSynchronizationContext());
     }
 
+    public void Logout()
+    {
+        if (auth != null)
+        {
+            auth.SignOut();
+            Debug.Log("User signed out successfully.");
+            
+            // Optionally, clear any stored user data or reset the UI
+            // For example:
+            // LoggedInUser = null;
+            // ClearUserInterface();
+            
+            // Load the login scene or any other scene you desire
+            SceneManager.LoadScene("Login");
+        }
+        else
+        {
+            Debug.LogWarning("Firebase authentication is not initialized.");
+        }
+    }
+
+
        public void InitiateMetaMaskAuthentication()
     {
         // Open MetaMask app using deep linking
