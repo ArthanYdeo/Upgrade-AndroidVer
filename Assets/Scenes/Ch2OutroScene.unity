@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skip
       objectReference: {fileID: 0}
+    - target: {fileID: 8842343277599160689, guid: cb818738305dd1244b46765f3cf435fa, type: 3}
+      propertyPath: playableDirector
+      value: 
+      objectReference: {fileID: 737948045}
     - target: {fileID: 9122183755286420851, guid: cb818738305dd1244b46765f3cf435fa, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

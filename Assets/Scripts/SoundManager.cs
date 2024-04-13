@@ -1,26 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour{
-    public static SoundManager Instance;
+    
+[SerializeField] Slider volumeSlider;
 
-    [SerializeField] private AudioSource _musicSource, _effectsSource;
 
-    void Awake(){
-        if(Instance == null){
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+void Start () {
+    if(!PlayerPrefs.HasKey("musicVolume")) 
+    {
+        PlayerPrefs.SetFloat("musicVolume", 1);
+        Load();
     }
-    public void PlaySound(AudioClip clip){
-        _effectsSource.PlayOneShot(clip);
+    else
+    {
+        Load();
     }
-    public void ChangeMasterVolume(float value){
-        AudioListener.volume = value;
-    }
+}
+
+public void ChangeVolume(){
+    AudioListener.volume = volumeSlider.value;
+    Save();
+}
+
+private void Load () {
+    volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+}
+
+private void Save () {
+    PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
+}
+
 }
