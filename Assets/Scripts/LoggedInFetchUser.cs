@@ -9,52 +9,35 @@ public class LoggedInFetchUser : MonoBehaviour
     private FirebaseAuth auth;
     private DatabaseReference dbRef;
 
-    private void Start()
+  private void Start()
+{
+    // Initialize Firebase
+    FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
     {
-        // Initialize Firebase
-        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
+        if (task.Result == DependencyStatus.Available)
         {
-            if (task.Result == DependencyStatus.Available)
-            {
-                // Firebase is ready
-                auth = FirebaseAuth.DefaultInstance;
-                dbRef = FirebaseDatabase.DefaultInstance.RootReference;
+            // Firebase is ready
+            auth = FirebaseAuth.DefaultInstance;
+            dbRef = FirebaseDatabase.DefaultInstance.RootReference;
 
+            // Check if a user is logged in
+            if (auth.CurrentUser != null)
+            {
                 // Fetch the currently logged-in user and their data from the database
-                FetchLoggedInUser();
+                FetchUserDataFromDatabase(auth.CurrentUser.UserId);
             }
             else
             {
-                Debug.LogError("Failed to initialize Firebase: " + task.Result.ToString());
-            }
-        });
-    }
-
-    private void FetchLoggedInUser()
-    {
-        if (auth != null)
-        {
-            FirebaseUser user = auth.CurrentUser;
-            if (user != null)
-            {
-                Debug.Log("Logged-in user found:");
-                Debug.Log("Display Name: " + user.DisplayName);
-                Debug.Log("Email: " + user.Email);
-                Debug.Log("User ID: " + user.UserId);
-
-                // Fetch additional user data from the Realtime Database
-                FetchUserDataFromDatabase(user.UserId);
-            }
-            else
-            {
-                Debug.Log("No user is currently logged in.");
+                Debug.LogWarning("No user is currently logged in.");
             }
         }
         else
         {
-            Debug.LogWarning("Firebase authentication is not initialized.");
+            Debug.LogError("Failed to initialize Firebase: " + task.Result.ToString());
         }
-    }
+    });
+}
+
 
     private void FetchUserDataFromDatabase(string userId)
     {

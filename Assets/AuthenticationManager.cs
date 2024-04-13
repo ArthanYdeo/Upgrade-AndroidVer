@@ -12,7 +12,9 @@ using UnityEngine.Networking;
 
 public class AuthenticationManager : MonoBehaviour
 {
-    public GameObject SuccessPanel;
+
+    public GameObject registrationIndicatorPanel; // Reference to the panel that indicates registration status
+    public Text registrationIndicatorText; // Reference to the text element inside the panel
     public string sceneNameToLoad;
     public TMP_InputField registerUsernameInput;
     public TMP_InputField registerEmailInput;
@@ -88,57 +90,50 @@ public void Register()
                 }
 
                 Debug.LogFormat("Signed up Successfully: {0} ({1})", newUser.DisplayName, newUser.UserId);
+                UpdateRegistrationIndication(true);
 
-                // Switch to the success panel
-                SwitchToSuccessPanel();
             });
     });
 }
 
-private void SwitchToSuccessPanel()
+    public void Login()
 {
-    SuccessPanel.SetActive(true);
+    string email = loginEmailInput.text;
+    string password = loginPasswordInput.text;
+
+    Debug.Log("Clicked Signin");
+
+    Firebase.Auth.FirebaseAuth.DefaultInstance.SignInWithEmailAndPasswordAsync(
+        email, password).ContinueWith(task =>
+        {
+            if (task.IsCanceled)
+            {
+                Debug.Log("Signin Canceled");
+                // Handle cancellation
+                return;
+            }
+            if (task.IsFaulted)
+            {
+                Debug.Log("Signin Failed");
+                // Handle failure
+                return;
+            }
+
+            // Access the FirebaseUser from the AuthResult
+            Firebase.Auth.AuthResult authResult = task.Result;
+            Firebase.Auth.FirebaseUser newUser = authResult.User;
+            // Store the logged-in user
+            LoggedInUser = newUser;
+
+            // Update the indication after successful login
+            UpdateRegistrationIndication(CheckRegistrationStatus());
+
+            // Debug the scene transition
+            Debug.Log("Loading next scene...");
+            SceneManager.LoadScene(sceneNameToLoad);
+        }, TaskScheduler.FromCurrentSynchronizationContext());
 }
 
-
-     public void Login()
-    {
-        string email = loginEmailInput.text;
-        string password = loginPasswordInput.text;
-
-        Debug.Log("Clicked Signin");
-
-        Firebase.Auth.FirebaseAuth.DefaultInstance.SignInWithEmailAndPasswordAsync(
-            email, password).ContinueWith(task =>
-            {
-                if (task.IsCanceled)
-                {
-                    Debug.Log("Signin Canceled");
-                    // Handle cancellation
-                    return;
-                }
-                if (task.IsFaulted)
-                {
-                    Debug.Log("Signin Failed");
-                    // Handle failure
-                    return;
-                }
-
-                // Access the FirebaseUser from the AuthResult
-                Firebase.Auth.AuthResult authResult = task.Result;
-                Firebase.Auth.FirebaseUser newUser = authResult.User;
-
-                Debug.LogFormat("Signed in Successfully: {0} ({1})",
-                    newUser.DisplayName, newUser.UserId);
-
-                // Store the logged-in user
-                LoggedInUser = newUser;
-
-                // Debug the scene transition
-                Debug.Log("Loading next scene...");
-                SceneManager.LoadScene(sceneNameToLoad);
-            }, TaskScheduler.FromCurrentSynchronizationContext());
-    }
 
     public void Logout()
     {
@@ -146,13 +141,6 @@ private void SwitchToSuccessPanel()
         {
             auth.SignOut();
             Debug.Log("User signed out successfully.");
-            
-            // Optionally, clear any stored user data or reset the UI
-            // For example:
-            // LoggedInUser = null;
-            // ClearUserInterface();
-            
-            // Load the login scene or any other scene you desire
             SceneManager.LoadScene("Login");
         }
         else
@@ -207,27 +195,38 @@ private void SwitchToSuccessPanel()
     // Method to verify authentication with MetaMask
     private bool VerifyAuthenticationWithMetaMask(string ethereumAddress, string signature)
     {
-        // Implement signature verification logic
-        // Verify the signature against the Ethereum address
-        // Return true if verification succeeds, false otherwise
-        // Example:
-        // bool verificationResult = YourSignatureVerificationMethod(ethereumAddress, signature);
-        // return verificationResult;
         return true; 
     }
 
     // Method to grant access to the user
     private void GrantAccess(string ethereumAddress)
     {
-        // Grant access to the user, load scenes, etc.
-        // Example: SceneManager.LoadScene(sceneNameToLoad);
-    }
 
-    // Method to handle authentication failure
+    }
     private void HandleAuthenticationFailure()
     {
         // Handle authentication failure, display error message, etc.
     }
+
+     private bool CheckRegistrationStatus()
+    {
+        return PlayerPrefs.HasKey("Registered");
+    }
+
+
+
+    private void UpdateRegistrationIndication(bool isRegistered)
+{
+    if (isRegistered)
+    {
+        registrationIndicatorText.text = "Registered";
+        Debug.Log("Setting registration indicator panel active"); // Add this debug log
+        registrationIndicatorPanel.SetActive(true); // Show the panel if registered
+        Debug.Log("Registration indicator panel active status: " + registrationIndicatorPanel.activeSelf); // Add this debug log
+        // Move the registration indicator panel to the top of the hierarchy
+        registrationIndicatorPanel.transform.SetAsLastSibling();
+    }
+}
 
   
     [System.Serializable]

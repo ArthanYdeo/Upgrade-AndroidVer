@@ -1,15 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MetaMaskIntegration : MonoBehaviour
 {
-     private const string metaMaskAppURI = "metamask://auth";
+    private const string metaMaskAppURI = "metamask://auth";
+    private const string messageToSign = "Please sign this message to authenticate.";
 
     public void InitiateMetaMaskAuthentication()
     {
-        // Open MetaMask app using deep linking
-        Application.OpenURL(metaMaskAppURI);
+        // Connect to MetaMask app and request signing
+        string uri = metaMaskAppURI + "?message=" + messageToSign;
+        Application.OpenURL(uri);
     }
 
     // Method to handle authentication response from MetaMask
