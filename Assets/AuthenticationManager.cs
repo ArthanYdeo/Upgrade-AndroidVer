@@ -13,8 +13,9 @@ using UnityEngine.Networking;
 public class AuthenticationManager : MonoBehaviour
 {
 
-    public GameObject registrationIndicatorPanel; // Reference to the panel that indicates registration status
-    public Text registrationIndicatorText; // Reference to the text element inside the panel
+    public GameObject successPanel;
+
+    public Button registerButton;
     public string sceneNameToLoad;
     public TMP_InputField registerUsernameInput;
     public TMP_InputField registerEmailInput;
@@ -48,9 +49,15 @@ public class AuthenticationManager : MonoBehaviour
                 Debug.LogError("Failed to initialize Firebase: " + task.Result.ToString());
             }
         });
+
+         successPanel.SetActive(false);
     }
-public void Register()
+ public void Register()
 {
+    // Disable the register button
+    registerButton.interactable = false;
+
+                    SwitchToSuccessPanel();
     string username = registerUsernameInput.text;
     string email = registerEmailInput.text;
     string password = registerPasswordInput.text;
@@ -60,40 +67,63 @@ public void Register()
     if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(wallet))
     {
         Debug.LogWarning("Please fill in all fields.");
+
+        // Re-enable the register button
+        // registerButton.interactable = true;
+
         return;
     }
 
     // Create user with email and password
+    Debug.Log("Creating user...");
     auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWith(task =>
     {
-        Debug.Log("Clicked Signup");
         if (task.IsCanceled || task.IsFaulted)
         {
             Debug.LogError("Failed to register user: " + task.Exception);
+
+            // Re-enable the register button
+            // registerButton.interactable = true;
+
             return;
         }
 
         // Registration successful, get user's unique ID
-        Firebase.Auth.FirebaseUser newUser = task.Result.User;
+        FirebaseUser newUser = task.Result.User;
         string userId = newUser.UserId;
 
         // Save additional user data to database
         var userData = new UserData(username, email, wallet);
         string userDataJson = JsonUtility.ToJson(userData);
+
+        Debug.Log("Saving user data to database...");
         dbRef.Child("users").Child(userId).SetRawJsonValueAsync(userDataJson)
             .ContinueWith(writeTask =>
             {
-                if (writeTask.IsFaulted || writeTask.IsCanceled)
+                if (writeTask.IsFaulted)
                 {
-                    Debug.LogError("Failed to write user data to database: " + writeTask.Exception);
+                    Debug.LogError("Failed to save user data: " + writeTask.Exception);
+
+                    // Re-enable the register button
+                    // registerButton.interactable = true;
+
                     return;
                 }
 
-                Debug.LogFormat("Signed up Successfully: {0} ({1})", newUser.DisplayName, newUser.UserId);
-                UpdateRegistrationIndication(true);
+                Debug.Log("User registered successfully.");
 
+
+                // Re-enable the register button
+                // registerButton.interactable = true;
             });
     });
+}
+
+
+
+    void SwitchToSuccessPanel()
+{
+    successPanel.SetActive(true);
 }
 
     public void Login()
@@ -126,7 +156,6 @@ public void Register()
             LoggedInUser = newUser;
 
             // Update the indication after successful login
-            UpdateRegistrationIndication(CheckRegistrationStatus());
 
             // Debug the scene transition
             Debug.Log("Loading next scene...");
@@ -213,20 +242,6 @@ public void Register()
         return PlayerPrefs.HasKey("Registered");
     }
 
-
-
-    private void UpdateRegistrationIndication(bool isRegistered)
-{
-    if (isRegistered)
-    {
-        registrationIndicatorText.text = "Registered";
-        Debug.Log("Setting registration indicator panel active"); // Add this debug log
-        registrationIndicatorPanel.SetActive(true); // Show the panel if registered
-        Debug.Log("Registration indicator panel active status: " + registrationIndicatorPanel.activeSelf); // Add this debug log
-        // Move the registration indicator panel to the top of the hierarchy
-        registrationIndicatorPanel.transform.SetAsLastSibling();
-    }
-}
 
   
     [System.Serializable]
